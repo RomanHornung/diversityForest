@@ -1,0 +1,236 @@
+
+rm(list=ls());gc()
+
+# setwd("Z:/Projects/BlockForests/Package/blockForest/")
+
+
+
+library("devtools")
+
+find_rtools(T)
+
+
+mydigest <- function (object, algo = c("md5", "sha1", "crc32", "sha256", 
+                                       "sha512", "xxhash32", "xxhash64", "murmur32"), serialize = TRUE, 
+                      file = FALSE, length = Inf, skip = "auto", ascii = FALSE, 
+                      raw = FALSE, seed = 0, errormode = c("stop", "warn", "silent")) 
+{
+  file.access <- R.utils::fileAccess
+  algo <- match.arg(algo)
+  errormode <- match.arg(errormode)
+  .errorhandler <- function(txt, obj = "", mode = "stop") {
+    if (mode == "stop") {
+      stop(txt, obj, call. = FALSE)
+    }
+    else if (mode == "warn") {
+      warning(txt, obj, call. = FALSE)
+      return(invisible(NA))
+    }
+    else {
+      return(invisible(NULL))
+    }
+  }
+  if (is.infinite(length)) {
+    length <- -1
+  }
+  if (is.character(file) && missing(object)) {
+    object <- file
+    file <- TRUE
+  }
+  if (serialize && !file) {
+    object <- if ("nosharing" %in% names(formals(base::serialize))) 
+      base::serialize(object, connection = NULL, ascii = ascii, 
+                      nosharing = TRUE)
+    else base::serialize(object, connection = NULL, ascii = ascii)
+    if (any(!is.na(pmatch(skip, "auto")))) {
+      if (ascii) {
+        skip <- which(object[1:30] == as.raw(10))[4]
+      }
+      else {
+        skip <- 14
+      }
+    }
+  }
+  else if (!is.character(object) && !inherits(object, "raw")) {
+    return(.errorhandler(paste("Argument object must be of type character", 
+                               "or raw vector if serialize is FALSE"), mode = errormode))
+  }
+  if (file && !is.character(object)) 
+    return(.errorhandler("file=TRUE can only be used with a character object", 
+                         mode = errormode))
+  algoint <- switch(algo, md5 = 1, sha1 = 2, crc32 = 3, sha256 = 4, 
+                    sha512 = 5, xxhash32 = 6, xxhash64 = 7, murmur32 = 8)
+  if (file) {
+    algoint <- algoint + 100
+    object <- path.expand(object)
+    if (!file.exists(object)) {
+      return(.errorhandler("The file does not exist: ", 
+                           object, mode = errormode))
+    }
+    if (!isTRUE(!file.info(object)$isdir)) {
+      return(.errorhandler("The specified pathname is not a file: ", 
+                           object, mode = errormode))
+    }
+    if (file.access(object, 4)) {
+      return(.errorhandler("The specified file is not readable: ", 
+                           object, mode = errormode))
+    }
+  }
+  if (is.character(skip)) 
+    skip <- 0
+  val <- .Call(digest_impl, object, as.integer(algoint), as.integer(length), 
+               as.integer(skip), as.integer(raw), as.integer(seed))
+  return(val)
+}
+
+library(digest)
+R.utils::reassignInPackage("digest", "digest", mydigest)
+
+
+
+roxygen2::roxygenise()
+
+
+
+
+check("Z:/Projects/OrdinalForests/Package/ordinalForest")
+
+
+
+set.seed(1234)
+
+require(diversityForest)
+## Tuning parameter optimization for the iris data set
+tuneres <- tunedivfor(formula = Species ~ ., data = iris, num.trees.pre = 2000)
+tuneres
+tuneres$nsplitsopt
+tuneres$proptryopt
+tuneres$tunegrid
+plot(tuneres$ooberrs)
+
+
+
+boxplot(tuneres$ooberrs ~ tuneres$tunegrid$proptrygrid)
+boxplot(tuneres$ooberrs ~ tuneres$tunegrid$nsplitsgrid)
+
+
+########build_win("Z:/Projects/OrdinalForests/Package/ordinalForest")
+
+
+
+library("devtools")
+
+install("Z:/Projects/BlockForests/Package/blockForest")
+
+
+
+
+library("ordinalForest")
+
+?ordinalForest
+
+
+data(hearth)
+
+set.seed(123)
+hearthsubset <- hearth[sort(sample(1:nrow(hearth), size=floor(nrow(hearth)*(1/2)))),]
+ordforres <- ordfor(depvar="Class", data=hearthsubset, ndiv=80, nbest=5, ntreeperdiv=100, 
+                    ntreefinal=1000, perfmeasure = "equal")
+# NOTE: ndiv=80 is not enough!! In practice, ndiv=1000 (default value) or a higher
+# number should be used.
+
+
+
+
+?ordfor
+
+
+
+?predict.ordfor
+
+
+makeCVdiv <- function(data, yname="y", ncv=10) {
+  
+  cvid <- rep(NA, length = nrow(data))
+  for(i in levels(data[, yname])) cvid[data[, yname] == i] <- sample(rep(1:ncv, length = sum(data[, yname] == i)))
+  
+  cvid
+  
+}
+
+setwd("Z:/")
+
+load("./Projects/OrdinalForests/AnalysisPaper/Paper/RealDataApplications/data/mammography_dataset.Rda")
+
+
+cvdiv <- makeCVdiv(data=dataset, ncv=10)
+# cvdiv
+# 
+# dim(dataset)
+# 
+# table(dataset$y)
+
+i <- 1
+  
+datatrain <- dataset[cvdiv!=i,]
+datatest <- dataset[cvdiv==i,]
+
+
+dim(datatrain)
+
+
+object1 <- ordfor(depvar="y", data=datatrain, ndiv=1000)
+ytesthat1 <- predict(object=object1, newdata=datatest)$ypred
+
+plot(object1)
+
+object2 <- ordfor(depvar="y", data=datatrain, naive=TRUE)
+
+object2
+
+
+plot(object2)
+
+ytesthat2 <- predict(object=object2, newdata=datatest)$ypred
+
+
+table(ytesthat1)
+table(ytesthat2)
+table(datatest$y)
+
+plot(object1)
+plot(object2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+data(hearth)
+#'
+set.seed(123)
+trainind <- sort(sample(1:nrow(hearth), size=floor(nrow(hearth)*(1/2))))
+testind <- sort(sample(setdiff(1:nrow(hearth), trainind), size=20))
+#'
+datatrain <- hearth[trainind,]
+datatest <- hearth[testind,]
+#'
+ordforres <- ordfor(depvar="Class", data=datatrain, nsets=60, nbest=5)
+# NOTE: nsets=60 is not enough, because the prediction performance of the resulting 
+# ordinal forest will be suboptimal!! In practice, nsets=1000 (default value) or a larger
+# number should be used.
+#'
+preds <- predict(ordforres, newdata=datatest)
+preds
+ 
+table(data.frame(true_values=datatest$Class, predictions=preds$ypred))
+
+head(preds$classfreqtree)

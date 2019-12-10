@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1575903581284.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "559E0328",
+    "lastKnownWriteTime" : 1575998772,
+    "last_content_update" : 1575998770641,
+    "path" : "Z:/Projects/DiversityForests/Development.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "22,34",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

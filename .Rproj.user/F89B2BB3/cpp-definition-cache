@@ -1,0 +1,3311 @@
+[
+    {
+        "definitions" : [
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/inst/include/diversityForest.h",
+        "file_last_write" : 1549643588.000000
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/AAA_check_cpp11.cpp",
+        "file_last_write" : 1549633321.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.cpp",
+                "kind" : 7,
+                "line" : 28,
+                "name" : "getVariableID(const std::string &)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@getVariableID#&1$@N@std@C@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@C@allocator>#C#1"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.cpp",
+                "kind" : 7,
+                "line" : 36,
+                "name" : "addSnpData(unsigned char *, size_t)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@addSnpData#*c#k#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.cpp",
+                "kind" : 7,
+                "line" : 43,
+                "name" : "loadFromFile(std::string)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@loadFromFile#$@N@std@C@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@C@allocator>#C#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.cpp",
+                "kind" : 7,
+                "line" : 82,
+                "name" : "loadFromFileWhitespace(std::ifstream &, std::string)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@loadFromFileWhitespace#&$@N@std@C@basic_ifstream>#C#$@N@std@S@char_traits>#C#$@N@std@C@basic_string>#C#S2_#$@N@std@C@allocator>#C#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.cpp",
+                "kind" : 7,
+                "line" : 120,
+                "name" : "loadFromFileOther(std::ifstream &, std::string, char)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@loadFromFileOther#&$@N@std@C@basic_ifstream>#C#$@N@std@S@char_traits>#C#$@N@std@C@basic_string>#C#S2_#$@N@std@C@allocator>#C#C#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.cpp",
+                "kind" : 7,
+                "line" : 154,
+                "name" : "getAllValues(std::vector<double> &, std::vector<size_t> &, size_t, size_t, size_t)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@getAllValues#&$@N@std@C@vector>#d#$@N@std@C@allocator>#d#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#k#k#1"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.cpp",
+                "kind" : 7,
+                "line" : 172,
+                "name" : "getMinMaxValues(double &, double &, std::vector<size_t> &, size_t, size_t, size_t)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@getMinMaxValues#&d#S0_#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#k#k#1"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.cpp",
+                "kind" : 7,
+                "line" : 188,
+                "name" : "sort",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@sort#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.cpp",
+                "kind" : 7,
+                "line" : 219,
+                "name" : "orderSnpLevels(std::string, bool)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@orderSnpLevels#$@N@std@C@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@C@allocator>#C#b#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.cpp",
+        "file_last_write" : 1549880431.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 2,
+                "line" : 25,
+                "name" : "Data",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@C@Data"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 51,
+                "name" : "getIndex(size_t, size_t)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@getIndex#k#k#1"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 66,
+                "name" : "getSnp(size_t, size_t, size_t)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@getSnp#k#k#k#1"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 87,
+                "name" : "getUniqueDataValue(size_t, size_t)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@getUniqueDataValue#k#k#1"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 101,
+                "name" : "getNumUniqueDataValues(size_t)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@getNumUniqueDataValues#k#1"
+            },
+            {
+                "column" : 35,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 119,
+                "name" : "getVariableNames",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@getVariableNames#1"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 122,
+                "name" : "getNumCols",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@getNumCols#1"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 125,
+                "name" : "getNumRows",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@getNumRows#1"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 129,
+                "name" : "getMaxNumUniqueValues",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@getMaxNumUniqueValues#1"
+            },
+            {
+                "column" : 30,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 139,
+                "name" : "getNoSplitVariables",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@getNoSplitVariables#1"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 143,
+                "name" : "addNoSplitVariable(size_t)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@addNoSplitVariable#k#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 148,
+                "name" : "getIsOrderedVariable",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@getIsOrderedVariable#"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 152,
+                "name" : "setIsOrderedVariable(const std::vector<std::string> &)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@setIsOrderedVariable#&1$@N@std@C@vector>#$@N@std@C@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@C@allocator>#C#$@N@std@C@allocator>#S2_#"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 160,
+                "name" : "setIsOrderedVariable(std::vector<bool> &)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@setIsOrderedVariable#&$@N@std@C@vector>#$@N@std@C@allocator>#b#"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 164,
+                "name" : "isOrderedVariable(size_t)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@isOrderedVariable#k#1"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 172,
+                "name" : "permuteSampleIDs(std::mt19937_64)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@permuteSampleIDs#$@N@std@C@mersenne_twister_engine>#k#Vk64#Vk312#Vk156#Vk31#Vk13043109905998158313#Vk29#Vk6148914691236517205#Vk17#Vk8202884508482404352#Vk37#Vk18444473444759240704#Vk43#Vk6364136223846793005#"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 178,
+                "name" : "getPermutedSampleID(size_t)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@getPermutedSampleID#k#1"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 182,
+                "name" : "getUnpermutedVarID(size_t)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@getUnpermutedVarID#k#1"
+            },
+            {
+                "column" : 43,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 195,
+                "name" : "getSnpOrder",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@getSnpOrder#1"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+                "kind" : 7,
+                "line" : 199,
+                "name" : "setSnpOrder(std::vector<std::vector<size_t> > &)",
+                "parent_name" : "Data",
+                "usr" : "c:@N@diversityForest@C@Data@F@setSnpOrder#&$@N@std@C@vector>#$@N@std@C@vector>#k#$@N@std@C@allocator>#k#$@N@std@C@allocator>#S2_#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/Data.h",
+        "file_last_write" : 1549871974.000000
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataChar.cpp",
+        "file_last_write" : 1549871974.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataChar.h",
+                "kind" : 2,
+                "line" : 25,
+                "name" : "DataChar",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@C@DataChar"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataChar.h",
+                "kind" : 7,
+                "line" : 35,
+                "name" : "get(size_t, size_t)",
+                "parent_name" : "DataChar",
+                "usr" : "c:@N@diversityForest@C@DataChar@F@get#k#k#1"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataChar.h",
+                "kind" : 7,
+                "line" : 50,
+                "name" : "reserveMemory",
+                "parent_name" : "DataChar",
+                "usr" : "c:@N@diversityForest@C@DataChar@F@reserveMemory#"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataChar.h",
+                "kind" : 7,
+                "line" : 54,
+                "name" : "set(size_t, size_t, double, bool &)",
+                "parent_name" : "DataChar",
+                "usr" : "c:@N@diversityForest@C@DataChar@F@set#k#k#d#&b#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataChar.h",
+        "file_last_write" : 1549871974.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataDouble.h",
+                "kind" : 2,
+                "line" : 24,
+                "name" : "DataDouble",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@C@DataDouble"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataDouble.h",
+                "kind" : 7,
+                "line" : 40,
+                "name" : "get(size_t, size_t)",
+                "parent_name" : "DataDouble",
+                "usr" : "c:@N@diversityForest@C@DataDouble@F@get#k#k#1"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataDouble.h",
+                "kind" : 7,
+                "line" : 55,
+                "name" : "reserveMemory",
+                "parent_name" : "DataDouble",
+                "usr" : "c:@N@diversityForest@C@DataDouble@F@reserveMemory#"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataDouble.h",
+                "kind" : 7,
+                "line" : 59,
+                "name" : "set(size_t, size_t, double, bool &)",
+                "parent_name" : "DataDouble",
+                "usr" : "c:@N@diversityForest@C@DataDouble@F@set#k#k#d#&b#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataDouble.h",
+        "file_last_write" : 1549871974.000000
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataFloat.cpp",
+        "file_last_write" : 1549871974.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataFloat.h",
+                "kind" : 2,
+                "line" : 24,
+                "name" : "DataFloat",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@C@DataFloat"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataFloat.h",
+                "kind" : 7,
+                "line" : 34,
+                "name" : "get(size_t, size_t)",
+                "parent_name" : "DataFloat",
+                "usr" : "c:@N@diversityForest@C@DataFloat@F@get#k#k#1"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataFloat.h",
+                "kind" : 7,
+                "line" : 49,
+                "name" : "reserveMemory",
+                "parent_name" : "DataFloat",
+                "usr" : "c:@N@diversityForest@C@DataFloat@F@reserveMemory#"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataFloat.h",
+                "kind" : 7,
+                "line" : 53,
+                "name" : "set(size_t, size_t, double, bool &)",
+                "parent_name" : "DataFloat",
+                "usr" : "c:@N@diversityForest@C@DataFloat@F@set#k#k#d#&b#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataFloat.h",
+        "file_last_write" : 1549871975.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataRcpp.h",
+                "kind" : 2,
+                "line" : 39,
+                "name" : "DataRcpp",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@C@DataRcpp"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataRcpp.h",
+                "kind" : 7,
+                "line" : 55,
+                "name" : "get(size_t, size_t)",
+                "parent_name" : "DataRcpp",
+                "usr" : "c:@N@diversityForest@C@DataRcpp@F@get#k#k#1"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataRcpp.h",
+                "kind" : 7,
+                "line" : 70,
+                "name" : "reserveMemory",
+                "parent_name" : "DataRcpp",
+                "usr" : "c:@N@diversityForest@C@DataRcpp@F@reserveMemory#"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataRcpp.h",
+                "kind" : 7,
+                "line" : 74,
+                "name" : "set(size_t, size_t, double, bool &)",
+                "parent_name" : "DataRcpp",
+                "usr" : "c:@N@diversityForest@C@DataRcpp@F@set#k#k#d#&b#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataRcpp.h",
+        "file_last_write" : 1549872136.000000
+    },
+    {
+        "definitions" : [
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataSparse.cpp",
+        "file_last_write" : 1549872136.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataSparse.h",
+                "kind" : 2,
+                "line" : 39,
+                "name" : "DataSparse",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@C@DataSparse"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataSparse.h",
+                "kind" : 7,
+                "line" : 51,
+                "name" : "get(size_t, size_t)",
+                "parent_name" : "DataSparse",
+                "usr" : "c:@N@diversityForest@C@DataSparse@F@get#k#k#1"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataSparse.h",
+                "kind" : 7,
+                "line" : 61,
+                "name" : "reserveMemory",
+                "parent_name" : "DataSparse",
+                "usr" : "c:@N@diversityForest@C@DataSparse@F@reserveMemory#"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataSparse.h",
+                "kind" : 7,
+                "line" : 65,
+                "name" : "set(size_t, size_t, double, bool &)",
+                "parent_name" : "DataSparse",
+                "usr" : "c:@N@diversityForest@C@DataSparse@F@set#k#k#d#&b#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/DataSparse.h",
+        "file_last_write" : 1549872136.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 6,
+                "line" : 41,
+                "name" : "load_data_from_file(const std::string &, const diversityForest::MemoryMode, std::ostream *)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@load_data_from_file#&1$@N@std@N@__1@S@basic_string>#C#$@N@std@N@__1@S@char_traits>#C#$@N@std@N@__1@S@allocator>#C#1$@N@diversityForest@E@MemoryMode#*I#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 66,
+                "name" : "initCpp(std::string, diversityForest::MemoryMode, std::string, diversityForest::uint, std::string, diversityForest::uint, std::ostream *, diversityForest::uint, diversityForest::uint, std::string, diversityForest::ImportanceMode, diversityForest::uint, std::string, const int &, std::string, bool, const int &, bool, diversityForest::SplitRule, std::string, bool, double, diversityForest::uint, double, double, double, bool, diversityForest::PredictionType, diversityForest::uint, diversityForest::uint)",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@initCpp#$@N@std@N@__1@S@basic_string>#C#$@N@std@N@__1@S@char_traits>#C#$@N@std@N@__1@S@allocator>#C#$@N@diversityForest@E@MemoryMode#S0_#i#S0_#i#*I#i#i#S0_#$@N@diversityForest@E@ImportanceMode#i#S0_#&1I#S0_#b#S6_#b#$@N@diversityForest@E@SplitRule#S0_#b#d#i#d#d#d#b#$@N@diversityForest@E@PredictionType#i#i#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 142,
+                "name" : "initR(std::string, int, diversityForest::uint, diversityForest::uint, std::ostream *, diversityForest::uint, diversityForest::uint, diversityForest::ImportanceMode, diversityForest::uint, int &, const int &, std::string, bool, bool, const int &, bool, diversityForest::SplitRule, int &, int &, bool, bool, int &, diversityForest::uint, double, double, double, bool, diversityForest::PredictionType, diversityForest::uint, bool, diversityForest::uint)",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@initR#$@N@std@N@__1@S@basic_string>#C#$@N@std@N@__1@S@char_traits>#C#$@N@std@N@__1@S@allocator>#C#I#i#i#*I#i#i#$@N@diversityForest@E@ImportanceMode#i#&I#&1I#S0_#b#b#S6_#b#$@N@diversityForest@E@SplitRule#S5_#S5_#b#b#S5_#i#d#d#d#b#$@N@diversityForest@E@PredictionType#i#b#i#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 186,
+                "name" : "init(std::string, diversityForest::MemoryMode, int, diversityForest::uint, std::string, diversityForest::uint, diversityForest::uint, diversityForest::uint, diversityForest::ImportanceMode, diversityForest::uint, std::string, bool, bool, const int &, bool, diversityForest::SplitRule, bool, int &, diversityForest::uint, double, double, double, bool, diversityForest::PredictionType, diversityForest::uint, bool, diversityForest::uint)",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@init#$@N@std@N@__1@S@basic_string>#C#$@N@std@N@__1@S@char_traits>#C#$@N@std@N@__1@S@allocator>#C#$@N@diversityForest@E@MemoryMode#I#i#S0_#i#i#i#$@N@diversityForest@E@ImportanceMode#i#S0_#b#b#&1I#b#$@N@diversityForest@E@SplitRule#b#&I#i#d#d#d#b#$@N@diversityForest@E@PredictionType#i#b#i#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 285,
+                "name" : "run(bool, bool)",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@run#b#b#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 317,
+                "name" : "writeOutput",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@writeOutput#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 362,
+                "name" : "writeImportanceFile",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@writeImportanceFile#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 389,
+                "name" : "saveToFile",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@saveToFile#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 422,
+                "name" : "grow",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@grow#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 526,
+                "name" : "predict",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@predict#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 583,
+                "name" : "computePredictionError",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@computePredictionError#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 618,
+                "name" : "computePermutationImportance",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@computePermutationImportance#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 708,
+                "name" : "growTreesInThread(diversityForest::uint, int *)",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@growTreesInThread#i#*I#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 731,
+                "name" : "predictTreesInThread(diversityForest::uint, const diversityForest::Data *, bool)",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@predictTreesInThread#i#*1$@N@diversityForest@S@Data#b#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 754,
+                "name" : "predictInternalInThread(diversityForest::uint)",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@predictInternalInThread#i#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 781,
+                "name" : "computeTreePermutationImportanceInThread(diversityForest::uint, int &, int &)",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@computeTreePermutationImportanceInThread#i#&I#S0_#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 807,
+                "name" : "loadFromFile(std::string)",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@loadFromFile#$@N@std@N@__1@S@basic_string>#C#$@N@std@N@__1@S@char_traits>#C#$@N@std@N@__1@S@allocator>#C#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 835,
+                "name" : "setSplitWeightVector(int &)",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@setSplitWeightVector#&I#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 923,
+                "name" : "setAlwaysSplitVariables(const int &)",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@setAlwaysSplitVariables#&1I#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+                "kind" : 7,
+                "line" : 973,
+                "name" : "showProgress(std::string, size_t)",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@showProgress#$@N@std@N@__1@S@basic_string>#C#$@N@std@N@__1@S@char_traits>#C#$@N@std@N@__1@S@allocator>#C#k#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.cpp",
+        "file_last_write" : 1575899903.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+                "kind" : 2,
+                "line" : 33,
+                "name" : "Forest",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@S@Forest"
+            },
+            {
+                "column" : 49,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+                "kind" : 7,
+                "line" : 82,
+                "name" : "getChildNodeIDs",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@getChildNodeIDs#"
+            },
+            {
+                "column" : 36,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+                "kind" : 7,
+                "line" : 89,
+                "name" : "getSplitVarIDs",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@getSplitVarIDs#"
+            },
+            {
+                "column" : 36,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+                "kind" : 7,
+                "line" : 96,
+                "name" : "getSplitValues",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@getSplitValues#"
+            },
+            {
+                "column" : 30,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+                "kind" : 7,
+                "line" : 103,
+                "name" : "getVariableImportance",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@getVariableImportance#1"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+                "kind" : 7,
+                "line" : 106,
+                "name" : "getOverallPredictionError",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@getOverallPredictionError#1"
+            },
+            {
+                "column" : 56,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+                "kind" : 7,
+                "line" : 109,
+                "name" : "getPredictions",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@getPredictions#1"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+                "kind" : 7,
+                "line" : 112,
+                "name" : "getDependentVarId",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@getDependentVarId#1"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+                "kind" : 7,
+                "line" : 115,
+                "name" : "getNumTrees",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@getNumTrees#1"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+                "kind" : 7,
+                "line" : 118,
+                "name" : "getMtry",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@getMtry#1"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+                "kind" : 7,
+                "line" : 121,
+                "name" : "getMaxNtriedSplits",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@getMaxNtriedSplits#1"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+                "kind" : 7,
+                "line" : 124,
+                "name" : "getProptry",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@getProptry#1"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+                "kind" : 7,
+                "line" : 127,
+                "name" : "getMinNodeSize",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@getMinNodeSize#1"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+                "kind" : 7,
+                "line" : 130,
+                "name" : "getNumIndependentVariables",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@getNumIndependentVariables#1"
+            },
+            {
+                "column" : 28,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+                "kind" : 7,
+                "line" : 134,
+                "name" : "getIsOrderedVariable",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@getIsOrderedVariable#1"
+            },
+            {
+                "column" : 36,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+                "kind" : 7,
+                "line" : 138,
+                "name" : "getInbagCounts",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@getInbagCounts#1"
+            },
+            {
+                "column" : 43,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+                "kind" : 7,
+                "line" : 146,
+                "name" : "getSnpOrder",
+                "parent_name" : "Forest",
+                "usr" : "c:@N@diversityForest@S@Forest@F@getSnpOrder#1"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/Forest.h",
+        "file_last_write" : 1575896174.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 28,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.cpp",
+                "kind" : 7,
+                "line" : 27,
+                "name" : "loadForest(size_t, size_t, std::vector<std::vector<std::vector<size_t> > > &, std::vector<std::vector<size_t> > &, std::vector<std::vector<double> > &, std::vector<double> &, std::vector<bool> &)",
+                "parent_name" : "ForestClassification",
+                "usr" : "c:@N@diversityForest@C@ForestClassification@F@loadForest#k#k#&$@N@std@C@vector>#$@N@std@C@vector>#$@N@std@C@vector>#k#$@N@std@C@allocator>#k#$@N@std@C@allocator>#S3_#$@N@std@C@allocator>#S2_#&S2_#&$@N@std@C@vector>#$@N@std@C@vector>#d#$@N@std@C@allocator>#d#$@N@std@C@allocator>#S10_#&S10_#&$@N@std@C@vector>#$@N@std@C@allocator>#b#"
+            },
+            {
+                "column" : 28,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.cpp",
+                "kind" : 7,
+                "line" : 49,
+                "name" : "initInternal(std::string)",
+                "parent_name" : "ForestClassification",
+                "usr" : "c:@N@diversityForest@C@ForestClassification@F@initInternal#$@N@std@C@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@C@allocator>#C#"
+            },
+            {
+                "column" : 28,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.cpp",
+                "kind" : 7,
+                "line" : 103,
+                "name" : "growInternal",
+                "parent_name" : "ForestClassification",
+                "usr" : "c:@N@diversityForest@C@ForestClassification@F@growInternal#"
+            },
+            {
+                "column" : 28,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.cpp",
+                "kind" : 7,
+                "line" : 111,
+                "name" : "allocatePredictMemory",
+                "parent_name" : "ForestClassification",
+                "usr" : "c:@N@diversityForest@C@ForestClassification@F@allocatePredictMemory#"
+            },
+            {
+                "column" : 28,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.cpp",
+                "kind" : 7,
+                "line" : 122,
+                "name" : "predictInternal(size_t)",
+                "parent_name" : "ForestClassification",
+                "usr" : "c:@N@diversityForest@C@ForestClassification@F@predictInternal#k#"
+            },
+            {
+                "column" : 28,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.cpp",
+                "kind" : 7,
+                "line" : 142,
+                "name" : "computePredictionErrorInternal",
+                "parent_name" : "ForestClassification",
+                "usr" : "c:@N@diversityForest@C@ForestClassification@F@computePredictionErrorInternal#"
+            },
+            {
+                "column" : 28,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.cpp",
+                "kind" : 7,
+                "line" : 188,
+                "name" : "writeOutputInternal",
+                "parent_name" : "ForestClassification",
+                "usr" : "c:@N@diversityForest@C@ForestClassification@F@writeOutputInternal#"
+            },
+            {
+                "column" : 28,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.cpp",
+                "kind" : 7,
+                "line" : 194,
+                "name" : "writeConfusionFile",
+                "parent_name" : "ForestClassification",
+                "usr" : "c:@N@diversityForest@C@ForestClassification@F@writeConfusionFile#"
+            },
+            {
+                "column" : 28,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.cpp",
+                "kind" : 7,
+                "line" : 238,
+                "name" : "writePredictionFile",
+                "parent_name" : "ForestClassification",
+                "usr" : "c:@N@diversityForest@C@ForestClassification@F@writePredictionFile#"
+            },
+            {
+                "column" : 28,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.cpp",
+                "kind" : 7,
+                "line" : 274,
+                "name" : "saveToFileInternal(std::ofstream &)",
+                "parent_name" : "ForestClassification",
+                "usr" : "c:@N@diversityForest@C@ForestClassification@F@saveToFileInternal#&$@N@std@C@basic_ofstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 28,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.cpp",
+                "kind" : 7,
+                "line" : 287,
+                "name" : "loadFromFileInternal(std::ifstream &)",
+                "parent_name" : "ForestClassification",
+                "usr" : "c:@N@diversityForest@C@ForestClassification@F@loadFromFileInternal#&$@N@std@C@basic_ifstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 30,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.cpp",
+                "kind" : 7,
+                "line" : 328,
+                "name" : "getTreePrediction(size_t, size_t)",
+                "parent_name" : "ForestClassification",
+                "usr" : "c:@N@diversityForest@C@ForestClassification@F@getTreePrediction#k#k#1"
+            },
+            {
+                "column" : 30,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.cpp",
+                "kind" : 7,
+                "line" : 333,
+                "name" : "getTreePredictionTerminalNodeID(size_t, size_t)",
+                "parent_name" : "ForestClassification",
+                "usr" : "c:@N@diversityForest@C@ForestClassification@F@getTreePredictionTerminalNodeID#k#k#1"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.cpp",
+        "file_last_write" : 1549871975.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.h",
+                "kind" : 2,
+                "line" : 25,
+                "name" : "ForestClassification",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@C@ForestClassification"
+            },
+            {
+                "column" : 30,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.h",
+                "kind" : 7,
+                "line" : 39,
+                "name" : "getClassValues",
+                "parent_name" : "ForestClassification",
+                "usr" : "c:@N@diversityForest@C@ForestClassification@F@getClassValues#1"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.h",
+                "kind" : 7,
+                "line" : 43,
+                "name" : "setClassWeights(std::vector<double> &)",
+                "parent_name" : "ForestClassification",
+                "usr" : "c:@N@diversityForest@C@ForestClassification@F@setClassWeights#&$@N@std@C@vector>#d#$@N@std@C@allocator>#d#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestClassification.h",
+        "file_last_write" : 1549871975.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 25,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.cpp",
+                "kind" : 7,
+                "line" : 21,
+                "name" : "loadForest(size_t, size_t, std::vector<std::vector<std::vector<size_t> > > &, std::vector<std::vector<size_t> > &, std::vector<std::vector<double> > &, std::vector<double> &, std::vector<std::vector<std::vector<double> > > &, std::vector<bool> &)",
+                "parent_name" : "ForestProbability",
+                "usr" : "c:@N@diversityForest@C@ForestProbability@F@loadForest#k#k#&$@N@std@C@vector>#$@N@std@C@vector>#$@N@std@C@vector>#k#$@N@std@C@allocator>#k#$@N@std@C@allocator>#S3_#$@N@std@C@allocator>#S2_#&S2_#&$@N@std@C@vector>#$@N@std@C@vector>#d#$@N@std@C@allocator>#d#$@N@std@C@allocator>#S10_#&S10_#&$@N@std@C@vector>#S9_#$@N@std@C@allocator>#S9_#&$@N@std@C@vector>#$@N@std@C@allocator>#b#"
+            },
+            {
+                "column" : 66,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.cpp",
+                "kind" : 7,
+                "line" : 44,
+                "name" : "getTerminalClassCounts",
+                "parent_name" : "ForestProbability",
+                "usr" : "c:@N@diversityForest@C@ForestProbability@F@getTerminalClassCounts#1"
+            },
+            {
+                "column" : 25,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.cpp",
+                "kind" : 7,
+                "line" : 54,
+                "name" : "initInternal(std::string)",
+                "parent_name" : "ForestProbability",
+                "usr" : "c:@N@diversityForest@C@ForestProbability@F@initInternal#$@N@std@C@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@C@allocator>#C#"
+            },
+            {
+                "column" : 25,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.cpp",
+                "kind" : 7,
+                "line" : 108,
+                "name" : "growInternal",
+                "parent_name" : "ForestProbability",
+                "usr" : "c:@N@diversityForest@C@ForestProbability@F@growInternal#"
+            },
+            {
+                "column" : 25,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.cpp",
+                "kind" : 7,
+                "line" : 116,
+                "name" : "allocatePredictMemory",
+                "parent_name" : "ForestProbability",
+                "usr" : "c:@N@diversityForest@C@ForestProbability@F@allocatePredictMemory#"
+            },
+            {
+                "column" : 25,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.cpp",
+                "kind" : 7,
+                "line" : 130,
+                "name" : "predictInternal(size_t)",
+                "parent_name" : "ForestProbability",
+                "usr" : "c:@N@diversityForest@C@ForestProbability@F@predictInternal#k#"
+            },
+            {
+                "column" : 25,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.cpp",
+                "kind" : 7,
+                "line" : 158,
+                "name" : "computePredictionErrorInternal",
+                "parent_name" : "ForestProbability",
+                "usr" : "c:@N@diversityForest@C@ForestProbability@F@computePredictionErrorInternal#"
+            },
+            {
+                "column" : 25,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.cpp",
+                "kind" : 7,
+                "line" : 201,
+                "name" : "writeOutputInternal",
+                "parent_name" : "ForestProbability",
+                "usr" : "c:@N@diversityForest@C@ForestProbability@F@writeOutputInternal#"
+            },
+            {
+                "column" : 25,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.cpp",
+                "kind" : 7,
+                "line" : 207,
+                "name" : "writeConfusionFile",
+                "parent_name" : "ForestProbability",
+                "usr" : "c:@N@diversityForest@C@ForestProbability@F@writeConfusionFile#"
+            },
+            {
+                "column" : 25,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.cpp",
+                "kind" : 7,
+                "line" : 225,
+                "name" : "writePredictionFile",
+                "parent_name" : "ForestProbability",
+                "usr" : "c:@N@diversityForest@C@ForestProbability@F@writePredictionFile#"
+            },
+            {
+                "column" : 25,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.cpp",
+                "kind" : 7,
+                "line" : 268,
+                "name" : "saveToFileInternal(std::ofstream &)",
+                "parent_name" : "ForestProbability",
+                "usr" : "c:@N@diversityForest@C@ForestProbability@F@saveToFileInternal#&$@N@std@C@basic_ofstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 25,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.cpp",
+                "kind" : 7,
+                "line" : 281,
+                "name" : "loadFromFileInternal(std::ifstream &)",
+                "parent_name" : "ForestProbability",
+                "usr" : "c:@N@diversityForest@C@ForestProbability@F@loadFromFileInternal#&$@N@std@C@basic_ifstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 47,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.cpp",
+                "kind" : 7,
+                "line" : 336,
+                "name" : "getTreePrediction(size_t, size_t)",
+                "parent_name" : "ForestProbability",
+                "usr" : "c:@N@diversityForest@C@ForestProbability@F@getTreePrediction#k#k#1"
+            },
+            {
+                "column" : 27,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.cpp",
+                "kind" : 7,
+                "line" : 341,
+                "name" : "getTreePredictionTerminalNodeID(size_t, size_t)",
+                "parent_name" : "ForestProbability",
+                "usr" : "c:@N@diversityForest@C@ForestProbability@F@getTreePredictionTerminalNodeID#k#k#1"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.cpp",
+        "file_last_write" : 1549871975.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.h",
+                "kind" : 2,
+                "line" : 25,
+                "name" : "ForestProbability",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@C@ForestProbability"
+            },
+            {
+                "column" : 30,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.h",
+                "kind" : 7,
+                "line" : 42,
+                "name" : "getClassValues",
+                "parent_name" : "ForestProbability",
+                "usr" : "c:@N@diversityForest@C@ForestProbability@F@getClassValues#1"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.h",
+                "kind" : 7,
+                "line" : 46,
+                "name" : "setClassWeights(std::vector<double> &)",
+                "parent_name" : "ForestProbability",
+                "usr" : "c:@N@diversityForest@C@ForestProbability@F@setClassWeights#&$@N@std@C@vector>#d#$@N@std@C@allocator>#d#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestProbability.h",
+        "file_last_write" : 1549871975.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 24,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestRegression.cpp",
+                "kind" : 7,
+                "line" : 23,
+                "name" : "loadForest(size_t, size_t, std::vector<std::vector<std::vector<size_t> > > &, std::vector<std::vector<size_t> > &, std::vector<std::vector<double> > &, std::vector<bool> &)",
+                "parent_name" : "ForestRegression",
+                "usr" : "c:@N@diversityForest@C@ForestRegression@F@loadForest#k#k#&$@N@std@C@vector>#$@N@std@C@vector>#$@N@std@C@vector>#k#$@N@std@C@allocator>#k#$@N@std@C@allocator>#S3_#$@N@std@C@allocator>#S2_#&S2_#&$@N@std@C@vector>#$@N@std@C@vector>#d#$@N@std@C@allocator>#d#$@N@std@C@allocator>#S10_#&$@N@std@C@vector>#$@N@std@C@allocator>#b#"
+            },
+            {
+                "column" : 24,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestRegression.cpp",
+                "kind" : 7,
+                "line" : 43,
+                "name" : "initInternal(std::string)",
+                "parent_name" : "ForestRegression",
+                "usr" : "c:@N@diversityForest@C@ForestRegression@F@initInternal#$@N@std@C@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@C@allocator>#C#"
+            },
+            {
+                "column" : 24,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestRegression.cpp",
+                "kind" : 7,
+                "line" : 68,
+                "name" : "growInternal",
+                "parent_name" : "ForestRegression",
+                "usr" : "c:@N@diversityForest@C@ForestRegression@F@growInternal#"
+            },
+            {
+                "column" : 24,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestRegression.cpp",
+                "kind" : 7,
+                "line" : 75,
+                "name" : "allocatePredictMemory",
+                "parent_name" : "ForestRegression",
+                "usr" : "c:@N@diversityForest@C@ForestRegression@F@allocatePredictMemory#"
+            },
+            {
+                "column" : 24,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestRegression.cpp",
+                "kind" : 7,
+                "line" : 86,
+                "name" : "predictInternal(size_t)",
+                "parent_name" : "ForestRegression",
+                "usr" : "c:@N@diversityForest@C@ForestRegression@F@predictInternal#k#"
+            },
+            {
+                "column" : 24,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestRegression.cpp",
+                "kind" : 7,
+                "line" : 106,
+                "name" : "computePredictionErrorInternal",
+                "parent_name" : "ForestRegression",
+                "usr" : "c:@N@diversityForest@C@ForestRegression@F@computePredictionErrorInternal#"
+            },
+            {
+                "column" : 24,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestRegression.cpp",
+                "kind" : 7,
+                "line" : 142,
+                "name" : "writeOutputInternal",
+                "parent_name" : "ForestRegression",
+                "usr" : "c:@N@diversityForest@C@ForestRegression@F@writeOutputInternal#"
+            },
+            {
+                "column" : 24,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestRegression.cpp",
+                "kind" : 7,
+                "line" : 148,
+                "name" : "writeConfusionFile",
+                "parent_name" : "ForestRegression",
+                "usr" : "c:@N@diversityForest@C@ForestRegression@F@writeConfusionFile#"
+            },
+            {
+                "column" : 24,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestRegression.cpp",
+                "kind" : 7,
+                "line" : 166,
+                "name" : "writePredictionFile",
+                "parent_name" : "ForestRegression",
+                "usr" : "c:@N@diversityForest@C@ForestRegression@F@writePredictionFile#"
+            },
+            {
+                "column" : 24,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestRegression.cpp",
+                "kind" : 7,
+                "line" : 202,
+                "name" : "saveToFileInternal(std::ofstream &)",
+                "parent_name" : "ForestRegression",
+                "usr" : "c:@N@diversityForest@C@ForestRegression@F@saveToFileInternal#&$@N@std@C@basic_ofstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 24,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestRegression.cpp",
+                "kind" : 7,
+                "line" : 212,
+                "name" : "loadFromFileInternal(std::ifstream &)",
+                "parent_name" : "ForestRegression",
+                "usr" : "c:@N@diversityForest@C@ForestRegression@F@loadFromFileInternal#&$@N@std@C@basic_ifstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestRegression.cpp",
+                "kind" : 7,
+                "line" : 249,
+                "name" : "getTreePrediction(size_t, size_t)",
+                "parent_name" : "ForestRegression",
+                "usr" : "c:@N@diversityForest@C@ForestRegression@F@getTreePrediction#k#k#1"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestRegression.cpp",
+                "kind" : 7,
+                "line" : 254,
+                "name" : "getTreePredictionTerminalNodeID(size_t, size_t)",
+                "parent_name" : "ForestRegression",
+                "usr" : "c:@N@diversityForest@C@ForestRegression@F@getTreePredictionTerminalNodeID#k#k#1"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestRegression.cpp",
+        "file_last_write" : 1549871975.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestRegression.h",
+                "kind" : 2,
+                "line" : 23,
+                "name" : "ForestRegression",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@C@ForestRegression"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestRegression.h",
+        "file_last_write" : 1549871975.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.cpp",
+                "kind" : 7,
+                "line" : 24,
+                "name" : "loadForest(size_t, size_t, std::vector<std::vector<std::vector<size_t> > > &, std::vector<std::vector<size_t> > &, std::vector<std::vector<double> > &, size_t, std::vector<std::vector<std::vector<double> > > &, std::vector<double> &, std::vector<bool> &)",
+                "parent_name" : "ForestSurvival",
+                "usr" : "c:@N@diversityForest@C@ForestSurvival@F@loadForest#k#k#&$@N@std@C@vector>#$@N@std@C@vector>#$@N@std@C@vector>#k#$@N@std@C@allocator>#k#$@N@std@C@allocator>#S3_#$@N@std@C@allocator>#S2_#&S2_#&$@N@std@C@vector>#$@N@std@C@vector>#d#$@N@std@C@allocator>#d#$@N@std@C@allocator>#S10_#k#&$@N@std@C@vector>#S9_#$@N@std@C@allocator>#S9_#&S10_#&$@N@std@C@vector>#$@N@std@C@allocator>#b#"
+            },
+            {
+                "column" : 63,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.cpp",
+                "kind" : 7,
+                "line" : 48,
+                "name" : "getChf",
+                "parent_name" : "ForestSurvival",
+                "usr" : "c:@N@diversityForest@C@ForestSurvival@F@getChf#1"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.cpp",
+                "kind" : 7,
+                "line" : 58,
+                "name" : "initInternal(std::string)",
+                "parent_name" : "ForestSurvival",
+                "usr" : "c:@N@diversityForest@C@ForestSurvival@F@initInternal#$@N@std@C@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@C@allocator>#C#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.cpp",
+                "kind" : 7,
+                "line" : 111,
+                "name" : "growInternal",
+                "parent_name" : "ForestSurvival",
+                "usr" : "c:@N@diversityForest@C@ForestSurvival@F@growInternal#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.cpp",
+                "kind" : 7,
+                "line" : 118,
+                "name" : "allocatePredictMemory",
+                "parent_name" : "ForestSurvival",
+                "usr" : "c:@N@diversityForest@C@ForestSurvival@F@allocatePredictMemory#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.cpp",
+                "kind" : 7,
+                "line" : 133,
+                "name" : "predictInternal(size_t)",
+                "parent_name" : "ForestSurvival",
+                "usr" : "c:@N@diversityForest@C@ForestSurvival@F@predictInternal#k#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.cpp",
+                "kind" : 7,
+                "line" : 156,
+                "name" : "computePredictionErrorInternal",
+                "parent_name" : "ForestSurvival",
+                "usr" : "c:@N@diversityForest@C@ForestSurvival@F@computePredictionErrorInternal#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.cpp",
+                "kind" : 7,
+                "line" : 200,
+                "name" : "writeOutputInternal",
+                "parent_name" : "ForestSurvival",
+                "usr" : "c:@N@diversityForest@C@ForestSurvival@F@writeOutputInternal#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.cpp",
+                "kind" : 7,
+                "line" : 208,
+                "name" : "writeConfusionFile",
+                "parent_name" : "ForestSurvival",
+                "usr" : "c:@N@diversityForest@C@ForestSurvival@F@writeConfusionFile#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.cpp",
+                "kind" : 7,
+                "line" : 227,
+                "name" : "writePredictionFile",
+                "parent_name" : "ForestSurvival",
+                "usr" : "c:@N@diversityForest@C@ForestSurvival@F@writePredictionFile#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.cpp",
+                "kind" : 7,
+                "line" : 271,
+                "name" : "saveToFileInternal(std::ofstream &)",
+                "parent_name" : "ForestSurvival",
+                "usr" : "c:@N@diversityForest@C@ForestSurvival@F@saveToFileInternal#&$@N@std@C@basic_ofstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.cpp",
+                "kind" : 7,
+                "line" : 287,
+                "name" : "loadFromFileInternal(std::ifstream &)",
+                "parent_name" : "ForestSurvival",
+                "usr" : "c:@N@diversityForest@C@ForestSurvival@F@loadFromFileInternal#&$@N@std@C@basic_ifstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 44,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.cpp",
+                "kind" : 7,
+                "line" : 356,
+                "name" : "getTreePrediction(size_t, size_t)",
+                "parent_name" : "ForestSurvival",
+                "usr" : "c:@N@diversityForest@C@ForestSurvival@F@getTreePrediction#k#k#1"
+            },
+            {
+                "column" : 24,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.cpp",
+                "kind" : 7,
+                "line" : 361,
+                "name" : "getTreePredictionTerminalNodeID(size_t, size_t)",
+                "parent_name" : "ForestSurvival",
+                "usr" : "c:@N@diversityForest@C@ForestSurvival@F@getTreePredictionTerminalNodeID#k#k#1"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.cpp",
+        "file_last_write" : 1549871974.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.h",
+                "kind" : 2,
+                "line" : 24,
+                "name" : "ForestSurvival",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@C@ForestSurvival"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.h",
+                "kind" : 7,
+                "line" : 41,
+                "name" : "getStatusVarId",
+                "parent_name" : "ForestSurvival",
+                "usr" : "c:@N@diversityForest@C@ForestSurvival@F@getStatusVarId#1"
+            },
+            {
+                "column" : 30,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.h",
+                "kind" : 7,
+                "line" : 44,
+                "name" : "getUniqueTimepoints",
+                "parent_name" : "ForestSurvival",
+                "usr" : "c:@N@diversityForest@C@ForestSurvival@F@getUniqueTimepoints#1"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/ForestSurvival.h",
+        "file_last_write" : 1549871974.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 39,
+                "name" : "init(const diversityForest::Data *, diversityForest::uint, diversityForest::uint, double, size_t, size_t, diversityForest::uint, int *, int *, int *, diversityForest::ImportanceMode, diversityForest::uint, bool, bool, diversityForest::SplitRule, int *, int *, bool, int *, double, double, bool, diversityForest::uint, diversityForest::uint)",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@init#*1$@N@diversityForest@S@Data#i#i#d#k#k#i#*I#S2_#S2_#$@N@diversityForest@E@ImportanceMode#i#b#b#$@N@diversityForest@E@SplitRule#S2_#S2_#b#S2_#d#d#b#i#i#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 80,
+                "name" : "grow(int *)",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@grow#*I#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 140,
+                "name" : "predict(const diversityForest::Data *, bool)",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@predict#*1$@N@diversityForest@S@Data#b#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 198,
+                "name" : "computePermutationImportance(int &, int &)",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@computePermutationImportance#&I#S0_#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 237,
+                "name" : "appendToFile(std::ofstream &)",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@appendToFile#&I#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 248,
+                "name" : "createPossibleSplitVarSubset(int &)",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@createPossibleSplitVarSubset#&I#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 281,
+                "name" : "drawSplitsUnivariate(size_t, size_t, int &)",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@drawSplitsUnivariate#k#k#&I#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 432,
+                "name" : "splitNode(size_t)",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@splitNode#k#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 550,
+                "name" : "createEmptyNode",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@createEmptyNode#"
+            },
+            {
+                "column" : 14,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 561,
+                "name" : "dropDownSamplePermuted(size_t, size_t, size_t)",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@dropDownSamplePermuted#k#k#k#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 602,
+                "name" : "permuteAndPredictOobSamples(size_t, int &)",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@permuteAndPredictOobSamples#k#&I#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 615,
+                "name" : "bootstrap",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@bootstrap#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 650,
+                "name" : "bootstrapWeighted",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@bootstrapWeighted#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 693,
+                "name" : "bootstrapWithoutReplacement",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@bootstrapWithoutReplacement#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 709,
+                "name" : "bootstrapWithoutReplacementWeighted",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@bootstrapWithoutReplacementWeighted#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 743,
+                "name" : "bootstrapClassWise",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@bootstrapClassWise#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 747,
+                "name" : "bootstrapWithoutReplacementClassWise",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@bootstrapWithoutReplacementClassWise#"
+            },
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+                "kind" : 7,
+                "line" : 751,
+                "name" : "setManualInbag",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@setManualInbag#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
+        "file_last_write" : 1575895879.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.h",
+                "kind" : 2,
+                "line" : 25,
+                "name" : "Tree",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@S@Tree"
+            },
+            {
+                "column" : 43,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.h",
+                "kind" : 7,
+                "line" : 57,
+                "name" : "getChildNodeIDs",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@getChildNodeIDs#1"
+            },
+            {
+                "column" : 30,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.h",
+                "kind" : 7,
+                "line" : 60,
+                "name" : "getSplitValues",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@getSplitValues#1"
+            },
+            {
+                "column" : 30,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.h",
+                "kind" : 7,
+                "line" : 63,
+                "name" : "getSplitVarIDs",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@getSplitVarIDs#1"
+            },
+            {
+                "column" : 30,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.h",
+                "kind" : 7,
+                "line" : 67,
+                "name" : "getOobSampleIDs",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@getOobSampleIDs#1"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.h",
+                "kind" : 7,
+                "line" : 70,
+                "name" : "getNumSamplesOob",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@getNumSamplesOob#1"
+            },
+            {
+                "column" : 30,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.h",
+                "kind" : 7,
+                "line" : 74,
+                "name" : "getInbagCounts",
+                "parent_name" : "Tree",
+                "usr" : "c:@N@diversityForest@S@Tree@F@getInbagCounts#1"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.h",
+        "file_last_write" : 1575899902.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 39,
+                "name" : "allocateMemory",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@allocateMemory#"
+            },
+            {
+                "column" : 28,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 55,
+                "name" : "estimate(size_t)",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@estimate#k#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 75,
+                "name" : "appendToFileInternal(std::ofstream &)",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@appendToFileInternal#&$@N@std@C@basic_ofstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 79,
+                "name" : "splitNodeInternal(size_t, std::vector<size_t> &)",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@splitNodeInternal#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 122,
+                "name" : "splitNodeUnivariateInternal(size_t, std::vector<std::pair<size_t, double> >)",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@splitNodeUnivariateInternal#k#$@N@std@C@vector>#$@N@std@S@pair>#k#d#$@N@std@C@allocator>#S1_#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 159,
+                "name" : "createEmptyNodeInternal",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@createEmptyNodeInternal#"
+            },
+            {
+                "column" : 28,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 163,
+                "name" : "computePredictionAccuracyInternal",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@computePredictionAccuracyInternal#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 178,
+                "name" : "findBestSplit(size_t, std::vector<size_t> &)",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplit#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 246,
+                "name" : "findBestSplitUnivariate(size_t, std::vector<std::pair<size_t, double> >)",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitUnivariate#k#$@N@std@C@vector>#$@N@std@S@pair>#k#d#$@N@std@C@allocator>#S1_#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 359,
+                "name" : "findBestSplitValueSmallQ(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitValueSmallQ#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 392,
+                "name" : "findBestSplitValueSmallQ(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &, const std::vector<double> &, std::vector<size_t> &, std::vector<size_t> &)",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitValueSmallQ#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#&1$@N@std@C@vector>#d#$@N@std@C@allocator>#d#&S1_#S8_#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 452,
+                "name" : "findBestSplitValueLargeQ(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitValueLargeQ#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 525,
+                "name" : "findBestSplitValueUnordered(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitValueUnordered#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 599,
+                "name" : "findBestSplitExtraTrees(size_t, std::vector<size_t> &)",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitExtraTrees#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 643,
+                "name" : "findBestSplitValueExtraTrees(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitValueExtraTrees#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 678,
+                "name" : "findBestSplitValueExtraTrees(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &, const std::vector<double> &, std::vector<size_t> &, std::vector<size_t> &)",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitValueExtraTrees#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#&1$@N@std@C@vector>#d#$@N@std@C@allocator>#d#&S1_#S8_#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 733,
+                "name" : "findBestSplitValueExtraTreesUnordered(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitValueExtraTreesUnordered#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 836,
+                "name" : "addGiniImportance(size_t, size_t, double)",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@addGiniImportance#k#k#d#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 869,
+                "name" : "bootstrapClassWise",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@bootstrapClassWise#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+                "kind" : 7,
+                "line" : 912,
+                "name" : "bootstrapWithoutReplacementClassWise",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@bootstrapWithoutReplacementClassWise#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
+        "file_last_write" : 1550597474.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.h",
+                "kind" : 2,
+                "line" : 22,
+                "name" : "TreeClassification",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@C@TreeClassification"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.h",
+                "kind" : 7,
+                "line" : 42,
+                "name" : "getPrediction(size_t)",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@getPrediction#k#1"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.h",
+                "kind" : 7,
+                "line" : 47,
+                "name" : "getPredictionTerminalNodeID(size_t)",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@getPredictionTerminalNodeID#k#1"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.h",
+                "kind" : 7,
+                "line" : 92,
+                "name" : "cleanUpInternal",
+                "parent_name" : "TreeClassification",
+                "usr" : "c:@N@diversityForest@C@TreeClassification@F@cleanUpInternal#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.h",
+        "file_last_write" : 1550485163.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 31,
+                "name" : "allocateMemory",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@allocateMemory#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 47,
+                "name" : "addToTerminalNodes(size_t)",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@addToTerminalNodes#k#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 65,
+                "name" : "appendToFileInternal(std::ofstream &)",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@appendToFileInternal#&$@N@std@C@basic_ofstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 81,
+                "name" : "splitNodeInternal(size_t, std::vector<size_t> &)",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@splitNodeInternal#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 124,
+                "name" : "splitNodeUnivariateInternal(size_t, std::vector<std::pair<size_t, double> >)",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@splitNodeUnivariateInternal#k#$@N@std@C@vector>#$@N@std@S@pair>#k#d#$@N@std@C@allocator>#S1_#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 129,
+                "name" : "createEmptyNodeInternal",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@createEmptyNodeInternal#"
+            },
+            {
+                "column" : 25,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 133,
+                "name" : "computePredictionAccuracyInternal",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@computePredictionAccuracyInternal#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 147,
+                "name" : "findBestSplit(size_t, std::vector<size_t> &)",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@findBestSplit#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 206,
+                "name" : "findBestSplitUnivariate(size_t, std::vector<std::pair<size_t, double> >)",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@findBestSplitUnivariate#k#$@N@std@C@vector>#$@N@std@S@pair>#k#d#$@N@std@C@allocator>#S1_#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 211,
+                "name" : "findBestSplitValueSmallQ(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@findBestSplitValueSmallQ#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 238,
+                "name" : "findBestSplitValueSmallQ(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &, const std::vector<double> &, std::vector<size_t> &, std::vector<size_t> &)",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@findBestSplitValueSmallQ#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#&1$@N@std@C@vector>#d#$@N@std@C@allocator>#d#&S1_#S8_#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 299,
+                "name" : "findBestSplitValueLargeQ(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@findBestSplitValueLargeQ#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 372,
+                "name" : "findBestSplitValueUnordered(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@findBestSplitValueUnordered#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 446,
+                "name" : "findBestSplitExtraTrees(size_t, std::vector<size_t> &)",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@findBestSplitExtraTrees#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 490,
+                "name" : "findBestSplitValueExtraTrees(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@findBestSplitValueExtraTrees#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 525,
+                "name" : "findBestSplitValueExtraTrees(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &, const std::vector<double> &, std::vector<size_t> &, std::vector<size_t> &)",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@findBestSplitValueExtraTrees#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#&1$@N@std@C@vector>#d#$@N@std@C@allocator>#d#&S1_#S8_#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 580,
+                "name" : "findBestSplitValueExtraTreesUnordered(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@findBestSplitValueExtraTreesUnordered#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 683,
+                "name" : "addImpurityImportance(size_t, size_t, double)",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@addImpurityImportance#k#k#d#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 716,
+                "name" : "bootstrapClassWise",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@bootstrapClassWise#"
+            },
+            {
+                "column" : 23,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+                "kind" : 7,
+                "line" : 759,
+                "name" : "bootstrapWithoutReplacementClassWise",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@bootstrapWithoutReplacementClassWise#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.cpp",
+        "file_last_write" : 1549972177.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.h",
+                "kind" : 2,
+                "line" : 23,
+                "name" : "TreeProbability",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@C@TreeProbability"
+            },
+            {
+                "column" : 30,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.h",
+                "kind" : 7,
+                "line" : 44,
+                "name" : "getPrediction(size_t)",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@getPrediction#k#1"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.h",
+                "kind" : 7,
+                "line" : 49,
+                "name" : "getPredictionTerminalNodeID(size_t)",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@getPredictionTerminalNodeID#k#1"
+            },
+            {
+                "column" : 43,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.h",
+                "kind" : 7,
+                "line" : 53,
+                "name" : "getTerminalClassCounts",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@getTerminalClassCounts#1"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.h",
+                "kind" : 7,
+                "line" : 98,
+                "name" : "cleanUpInternal",
+                "parent_name" : "TreeProbability",
+                "usr" : "c:@N@diversityForest@C@TreeProbability@F@cleanUpInternal#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeProbability.h",
+        "file_last_write" : 1549972177.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 29,
+                "name" : "allocateMemory",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@allocateMemory#"
+            },
+            {
+                "column" : 24,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 44,
+                "name" : "estimate(size_t)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@estimate#k#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 56,
+                "name" : "appendToFileInternal(std::ofstream &)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@appendToFileInternal#&$@N@std@C@basic_ofstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 60,
+                "name" : "splitNodeInternal(size_t, std::vector<size_t> &)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@splitNodeInternal#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 106,
+                "name" : "splitNodeUnivariateInternal(size_t, std::vector<std::pair<size_t, double> >)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@splitNodeUnivariateInternal#k#$@N@std@C@vector>#$@N@std@S@pair>#k#d#$@N@std@C@allocator>#S1_#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 111,
+                "name" : "createEmptyNodeInternal",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@createEmptyNodeInternal#"
+            },
+            {
+                "column" : 24,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 115,
+                "name" : "computePredictionAccuracyInternal",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@computePredictionAccuracyInternal#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 130,
+                "name" : "findBestSplit(size_t, std::vector<size_t> &)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplit#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 184,
+                "name" : "findBestSplitUnivariate(size_t, std::vector<std::pair<size_t, double> >)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitUnivariate#k#$@N@std@C@vector>#$@N@std@S@pair>#k#d#$@N@std@C@allocator>#S1_#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 189,
+                "name" : "findBestSplitValueSmallQ(size_t, size_t, double, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitValueSmallQ#k#k#d#k#&d#&k#S0_#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 216,
+                "name" : "findBestSplitValueSmallQ(size_t, size_t, double, size_t, double &, size_t &, double &, std::vector<double>, std::vector<double> &, std::vector<size_t> &)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitValueSmallQ#k#k#d#k#&d#&k#S0_#$@N@std@C@vector>#d#$@N@std@C@allocator>#d#&S2_#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 266,
+                "name" : "findBestSplitValueLargeQ(size_t, size_t, double, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitValueLargeQ#k#k#d#k#&d#&k#S0_#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 326,
+                "name" : "findBestSplitValueUnordered(size_t, size_t, double, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitValueUnordered#k#k#d#k#&d#&k#S0_#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 389,
+                "name" : "findBestSplitMaxstat(size_t, std::vector<size_t> &)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitMaxstat#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 492,
+                "name" : "findBestSplitExtraTrees(size_t, std::vector<size_t> &)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitExtraTrees#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 534,
+                "name" : "findBestSplitValueExtraTrees(size_t, size_t, double, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitValueExtraTrees#k#k#d#k#&d#&k#S0_#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 569,
+                "name" : "findBestSplitValueExtraTrees(size_t, size_t, double, size_t, double &, size_t &, double &, std::vector<double>, std::vector<double> &, std::vector<size_t> &)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitValueExtraTrees#k#k#d#k#&d#&k#S0_#$@N@std@C@vector>#d#$@N@std@C@allocator>#d#&S2_#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 613,
+                "name" : "findBestSplitValueExtraTreesUnordered(size_t, size_t, double, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitValueExtraTreesUnordered#k#k#d#k#&d#&k#S0_#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+                "kind" : 7,
+                "line" : 705,
+                "name" : "addImpurityImportance(size_t, size_t, double)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@addImpurityImportance#k#k#d#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
+        "file_last_write" : 1549972177.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.h",
+                "kind" : 2,
+                "line" : 22,
+                "name" : "TreeRegression",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@C@TreeRegression"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.h",
+                "kind" : 7,
+                "line" : 41,
+                "name" : "getPrediction(size_t)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@getPrediction#k#1"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.h",
+                "kind" : 7,
+                "line" : 46,
+                "name" : "getPredictionTerminalNodeID(size_t)",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@getPredictionTerminalNodeID#k#1"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.h",
+                "kind" : 7,
+                "line" : 85,
+                "name" : "cleanUpInternal",
+                "parent_name" : "TreeRegression",
+                "usr" : "c:@N@diversityForest@C@TreeRegression@F@cleanUpInternal#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.h",
+        "file_last_write" : 1549972177.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 39,
+                "name" : "allocateMemory",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@allocateMemory#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 45,
+                "name" : "appendToFileInternal(std::ofstream &)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@appendToFileInternal#&$@N@std@C@basic_ofstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 60,
+                "name" : "createEmptyNodeInternal",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@createEmptyNodeInternal#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 64,
+                "name" : "computeSurvival(size_t)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@computeSurvival#k#"
+            },
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 77,
+                "name" : "computePredictionAccuracyInternal",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@computePredictionAccuracyInternal#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 90,
+                "name" : "splitNodeInternal(size_t, std::vector<size_t> &)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@splitNodeInternal#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 102,
+                "name" : "splitNodeUnivariateInternal(size_t, std::vector<std::pair<size_t, double> >)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@splitNodeUnivariateInternal#k#$@N@std@C@vector>#$@N@std@S@pair>#k#d#$@N@std@C@allocator>#S1_#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 107,
+                "name" : "findBestSplit(size_t, std::vector<size_t> &)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplit#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 161,
+                "name" : "findBestSplitUnivariate(size_t, std::vector<std::pair<size_t, double> >)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplitUnivariate#k#$@N@std@C@vector>#$@N@std@S@pair>#k#d#$@N@std@C@allocator>#S1_#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 166,
+                "name" : "findBestSplitMaxstat(size_t, std::vector<size_t> &)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplitMaxstat#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 291,
+                "name" : "computeDeathCounts(size_t)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@computeDeathCounts#k#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 319,
+                "name" : "computeChildDeathCounts(size_t, size_t, std::vector<double> &, std::vector<size_t> &, std::vector<size_t> &, std::vector<size_t> &, size_t)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@computeChildDeathCounts#k#k#&$@N@std@C@vector>#d#$@N@std@C@allocator>#d#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#S3_#S3_#k#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 345,
+                "name" : "findBestSplitValueLogRank(size_t, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplitValueLogRank#k#k#&d#&k#S0_#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 420,
+                "name" : "findBestSplitValueLogRankUnordered(size_t, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplitValueLogRankUnordered#k#k#&d#&k#S0_#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 517,
+                "name" : "findBestSplitValueAUC(size_t, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplitValueAUC#k#k#&d#&k#S0_#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 586,
+                "name" : "computeAucSplit(double, double, double, double, double, double, size_t, std::vector<double> &, std::vector<double> &, std::vector<double> &)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@computeAucSplit#d#d#d#d#d#d#k#&$@N@std@C@vector>#d#$@N@std@C@allocator>#d#S0_#S0_#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 652,
+                "name" : "findBestSplitExtraTrees(size_t, std::vector<size_t> &)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplitExtraTrees#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 701,
+                "name" : "findBestSplitValueExtraTrees(size_t, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplitValueExtraTrees#k#k#&d#&k#S0_#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 779,
+                "name" : "findBestSplitValueExtraTreesUnordered(size_t, size_t, double &, size_t &, double &)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplitValueExtraTreesUnordered#k#k#&d#&k#S0_#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+                "kind" : 7,
+                "line" : 904,
+                "name" : "addImpurityImportance(size_t, size_t, double)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@addImpurityImportance#k#k#d#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
+        "file_last_write" : 1549972177.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 7,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.h",
+                "kind" : 2,
+                "line" : 22,
+                "name" : "TreeSurvival",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival"
+            },
+            {
+                "column" : 43,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.h",
+                "kind" : 7,
+                "line" : 41,
+                "name" : "getChf",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@getChf#1"
+            },
+            {
+                "column" : 30,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.h",
+                "kind" : 7,
+                "line" : 45,
+                "name" : "getPrediction(size_t)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@getPrediction#k#1"
+            },
+            {
+                "column" : 10,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.h",
+                "kind" : 7,
+                "line" : 50,
+                "name" : "getPredictionTerminalNodeID(size_t)",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@getPredictionTerminalNodeID#k#1"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.h",
+                "kind" : 7,
+                "line" : 95,
+                "name" : "cleanUpInternal",
+                "parent_name" : "TreeSurvival",
+                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@cleanUpInternal#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.h",
+        "file_last_write" : 1549972177.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 12,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/divforCpp.cpp",
+                "kind" : 6,
+                "line" : 51,
+                "name" : "divforCpp(diversityForest::uint, std::string, Rcpp::NumericMatrix &, int, diversityForest::uint, diversityForest::uint, bool, diversityForest::uint, diversityForest::uint, bool, diversityForest::uint, diversityForest::uint, int &, bool, int &, bool, std::string, bool, Rcpp::List, Rcpp::RawMatrix, bool, bool, int &, bool, bool, diversityForest::uint, int &, bool, int &, bool, bool, int &, double, double, bool, diversityForest::uint, diversityForest::uint, int &, bool, bool, bool, diversityForest::uint, int &, bool, diversityForest::uint, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@divforCpp#i#$@N@std@N@__1@S@basic_string>#C#$@N@std@N@__1@S@char_traits>#C#$@N@std@N@__1@S@allocator>#C#&I#I#i#i#b#i#i#b#i#i#S3_#b#S3_#b#S0_#b#I#I#b#b#S3_#b#b#i#S3_#b#S3_#b#b#S3_#d#d#b#i#i#S3_#b#b#b#i#S3_#b#i#d#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/divforCpp.cpp",
+        "file_last_write" : 1575899902.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 22,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 8,
+                "line" : 30,
+                "name" : "uint",
+                "parent_name" : "",
+                "usr" : "c:globals.h@N@diversityForest@T@uint"
+            },
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 4,
+                "line" : 33,
+                "name" : "TreeType",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@TreeType"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 34,
+                "name" : "TREE_CLASSIFICATION",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@TreeType@TREE_CLASSIFICATION"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 35,
+                "name" : "TREE_REGRESSION",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@TreeType@TREE_REGRESSION"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 36,
+                "name" : "TREE_SURVIVAL",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@TreeType@TREE_SURVIVAL"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 37,
+                "name" : "TREE_PROBABILITY",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@TreeType@TREE_PROBABILITY"
+            },
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 4,
+                "line" : 41,
+                "name" : "MemoryMode",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@MemoryMode"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 42,
+                "name" : "MEM_DOUBLE",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@MemoryMode@MEM_DOUBLE"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 43,
+                "name" : "MEM_FLOAT",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@MemoryMode@MEM_FLOAT"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 44,
+                "name" : "MEM_CHAR",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@MemoryMode@MEM_CHAR"
+            },
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 4,
+                "line" : 53,
+                "name" : "ImportanceMode",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@ImportanceMode"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 54,
+                "name" : "IMP_NONE",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@ImportanceMode@IMP_NONE"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 55,
+                "name" : "IMP_GINI",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@ImportanceMode@IMP_GINI"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 56,
+                "name" : "IMP_PERM_BREIMAN",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@ImportanceMode@IMP_PERM_BREIMAN"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 57,
+                "name" : "IMP_PERM_LIAW",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@ImportanceMode@IMP_PERM_LIAW"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 58,
+                "name" : "IMP_PERM_RAW",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@ImportanceMode@IMP_PERM_RAW"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 59,
+                "name" : "IMP_GINI_CORRECTED",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@ImportanceMode@IMP_GINI_CORRECTED"
+            },
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 4,
+                "line" : 64,
+                "name" : "SplitRule",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@SplitRule"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 65,
+                "name" : "LOGRANK",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@SplitRule@LOGRANK"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 66,
+                "name" : "AUC",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@SplitRule@AUC"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 67,
+                "name" : "AUC_IGNORE_TIES",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@SplitRule@AUC_IGNORE_TIES"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 68,
+                "name" : "MAXSTAT",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@SplitRule@MAXSTAT"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 69,
+                "name" : "EXTRATREES",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@SplitRule@EXTRATREES"
+            },
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 4,
+                "line" : 73,
+                "name" : "PredictionType",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@PredictionType"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 74,
+                "name" : "RESPONSE",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@PredictionType@RESPONSE"
+            },
+            {
+                "column" : 3,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+                "kind" : 5,
+                "line" : 75,
+                "name" : "TERMINALNODES",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@E@PredictionType@TERMINALNODES"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/globals.h",
+        "file_last_write" : 1573567007.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 30,
+                "name" : "equalSplit(std::vector<uint> &, uint, uint, uint)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@equalSplit#&$@N@std@C@vector>#i#$@N@std@C@allocator>#i#i#i#i#"
+            },
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 65,
+                "name" : "loadDoubleVectorFromFile(std::vector<double> &, std::string)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@loadDoubleVectorFromFile#&$@N@std@C@vector>#d#$@N@std@C@allocator>#d#$@N@std@C@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@C@allocator>#C#"
+            },
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 84,
+                "name" : "drawWithoutReplacementSkip(std::vector<size_t> &, std::mt19937_64 &, size_t, const std::vector<size_t> &, size_t)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@drawWithoutReplacementSkip#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#&$@N@std@C@mersenne_twister_engine>#k#Vk64#Vk312#Vk156#Vk31#Vk13043109905998158313#Vk29#Vk6148914691236517205#Vk17#Vk8202884508482404352#Vk37#Vk18444473444759240704#Vk43#Vk6364136223846793005#k#&1S1_#k#"
+            },
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 94,
+                "name" : "drawWithoutReplacementSimple(std::vector<size_t> &, std::mt19937_64 &, size_t, const std::vector<size_t> &, size_t)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@drawWithoutReplacementSimple#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#&$@N@std@C@mersenne_twister_engine>#k#Vk64#Vk312#Vk156#Vk31#Vk13043109905998158313#Vk29#Vk6148914691236517205#Vk17#Vk8202884508482404352#Vk37#Vk18444473444759240704#Vk43#Vk6364136223846793005#k#&1S1_#k#"
+            },
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 119,
+                "name" : "drawWithoutReplacementFisherYates(std::vector<size_t> &, std::mt19937_64 &, size_t, const std::vector<size_t> &, size_t)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@drawWithoutReplacementFisherYates#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#&$@N@std@C@mersenne_twister_engine>#k#Vk64#Vk312#Vk156#Vk31#Vk13043109905998158313#Vk29#Vk6148914691236517205#Vk17#Vk8202884508482404352#Vk37#Vk18444473444759240704#Vk43#Vk6364136223846793005#k#&1S1_#k#"
+            },
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 141,
+                "name" : "drawWithoutReplacementWeighted(std::vector<size_t> &, std::mt19937_64 &, const std::vector<size_t> &, size_t, const std::vector<double> &)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@drawWithoutReplacementWeighted#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#&$@N@std@C@mersenne_twister_engine>#k#Vk64#Vk312#Vk156#Vk31#Vk13043109905998158313#Vk29#Vk6148914691236517205#Vk17#Vk8202884508482404352#Vk37#Vk18444473444759240704#Vk43#Vk6364136223846793005#&1S1_#k#&1$@N@std@C@vector>#d#$@N@std@C@allocator>#d#"
+            },
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 161,
+                "name" : "drawWithoutReplacementWeighted(std::vector<size_t> &, std::mt19937_64 &, size_t, size_t, const std::vector<double> &)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@drawWithoutReplacementWeighted#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#&$@N@std@C@mersenne_twister_engine>#k#Vk64#Vk312#Vk156#Vk31#Vk13043109905998158313#Vk29#Vk6148914691236517205#Vk17#Vk8202884508482404352#Vk37#Vk18444473444759240704#Vk43#Vk6364136223846793005#k#k#&1$@N@std@C@vector>#d#$@N@std@C@allocator>#d#"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 181,
+                "name" : "mostFrequentValue(const std::unordered_map<double, size_t> &, std::mt19937_64)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@mostFrequentValue#&1$@N@std@C@unordered_map>#d#k#$@N@std@S@hash>#d#$@N@std@S@equal_to>#d#$@N@std@C@allocator>#$@N@std@S@pair>#1d#k#$@N@std@C@mersenne_twister_engine>#k#Vk64#Vk312#Vk156#Vk31#Vk13043109905998158313#Vk29#Vk6148914691236517205#Vk17#Vk8202884508482404352#Vk37#Vk18444473444759240704#Vk43#Vk6364136223846793005#"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 206,
+                "name" : "computeConcordanceIndex(const diversityForest::Data &, const std::vector<double> &, size_t, size_t, const std::vector<size_t> &)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@computeConcordanceIndex#&1$@N@diversityForest@C@Data#&1$@N@std@C@vector>#d#$@N@std@C@allocator>#d#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 13,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 255,
+                "name" : "uintToString(uint)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@uintToString#i#"
+            },
+            {
+                "column" : 13,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 265,
+                "name" : "beautifyTime(uint)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@beautifyTime#i#"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 298,
+                "name" : "roundToNextMultiple(size_t, uint)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@roundToNextMultiple#k#i#"
+            },
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 312,
+                "name" : "splitString(std::vector<std::string> &, const std::string &, char)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@splitString#&$@N@std@C@vector>#$@N@std@C@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@C@allocator>#C#$@N@std@C@allocator>#S2_#&1S2_#C#"
+            },
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 322,
+                "name" : "shuffleAndSplit(std::vector<size_t> &, std::vector<size_t> &, size_t, size_t, std::mt19937_64)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@shuffleAndSplit#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#S0_#k#k#$@N@std@C@mersenne_twister_engine>#k#Vk64#Vk312#Vk156#Vk31#Vk13043109905998158313#Vk29#Vk6148914691236517205#Vk17#Vk8202884508482404352#Vk37#Vk18444473444759240704#Vk43#Vk6364136223846793005#"
+            },
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 340,
+                "name" : "shuffleAndSplitAppend(std::vector<size_t> &, std::vector<size_t> &, size_t, size_t, const std::vector<size_t> &, std::mt19937_64)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@shuffleAndSplitAppend#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#S0_#k#k#&1S1_#$@N@std@C@mersenne_twister_engine>#k#Vk64#Vk312#Vk156#Vk31#Vk13043109905998158313#Vk29#Vk6148914691236517205#Vk17#Vk8202884508482404352#Vk37#Vk18444473444759240704#Vk43#Vk6364136223846793005#"
+            },
+            {
+                "column" : 13,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 368,
+                "name" : "checkUnorderedVariables(const diversityForest::Data &, const std::vector<std::string> &)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@checkUnorderedVariables#&1$@N@diversityForest@C@Data#&1$@N@std@C@vector>#$@N@std@C@basic_string>#C#$@N@std@S@char_traits>#C#$@N@std@C@allocator>#C#$@N@std@C@allocator>#S4_#"
+            },
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 394,
+                "name" : "checkPositiveIntegers(const std::vector<double> &)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@checkPositiveIntegers#&1$@N@std@C@vector>#d#$@N@std@C@allocator>#d#"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 403,
+                "name" : "maxstatPValueLau92(double, double, double)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@maxstatPValueLau92#d#d#d#"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 422,
+                "name" : "maxstatPValueLau94(double, double, double, size_t, const std::vector<size_t> &)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@maxstatPValueLau94#d#d#d#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 436,
+                "name" : "maxstatPValueUnadjusted(double)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@maxstatPValueUnadjusted#d#"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 440,
+                "name" : "dstdnorm(double)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@dstdnorm#d#"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 444,
+                "name" : "pstdnorm(double)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@pstdnorm#d#"
+            },
+            {
+                "column" : 21,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 448,
+                "name" : "adjustPvalues(std::vector<double> &)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@adjustPvalues#&$@N@std@C@vector>#d#$@N@std@C@allocator>#d#"
+            },
+            {
+                "column" : 21,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 467,
+                "name" : "logrankScores(const std::vector<double> &, const std::vector<double> &)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@logrankScores#&1$@N@std@C@vector>#d#$@N@std@C@allocator>#d#S0_#"
+            },
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 499,
+                "name" : "maxstat(const std::vector<double> &, const std::vector<double> &, const std::vector<size_t> &, double &, double &, double, double)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@maxstat#&1$@N@std@C@vector>#d#$@N@std@C@allocator>#d#S0_#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#&d#S6_#d#d#"
+            },
+            {
+                "column" : 21,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 565,
+                "name" : "numSamplesLeftOfCutpoint(std::vector<double> &, const std::vector<size_t> &)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@numSamplesLeftOfCutpoint#&$@N@std@C@vector>#d#$@N@std@C@allocator>#d#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+            },
+            {
+                "column" : 20,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+                "kind" : 6,
+                "line" : 582,
+                "name" : "readFromStream(std::stringstream &, double &)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@readFromStream#&$@N@std@C@basic_stringstream>#C#$@N@std@S@char_traits>#C#$@N@std@C@allocator>#C#&d#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.cpp",
+        "file_last_write" : 1549983427.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 13,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.h",
+                "kind" : 6,
+                "line" : 58,
+                "name" : "saveVector1D(const std::vector<T> &, std::ofstream &)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@FT@>1#TsaveVector1D#&1>@N@std@CT>2#T#T@vector2t0.0>@N@std@CT>1#T@allocator1S2_#&$@N@std@C@basic_ofstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 13,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.h",
+                "kind" : 6,
+                "line" : 66,
+                "name" : "saveVector1D<>(const std::vector<bool> &, std::ofstream &)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@saveVector1D<#b>#&1$@N@std@C@vector>#$@N@std@C@allocator>#b#&$@N@std@C@basic_ofstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 13,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.h",
+                "kind" : 6,
+                "line" : 84,
+                "name" : "readVector1D(std::vector<T> &, std::ifstream &)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@FT@>1#TreadVector1D#&>@N@std@CT>2#T#T@vector2t0.0>@N@std@CT>1#T@allocator1S2_#&$@N@std@C@basic_ifstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 13,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.h",
+                "kind" : 6,
+                "line" : 93,
+                "name" : "readVector1D<>(std::vector<bool> &, std::ifstream &)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@readVector1D<#b>#&$@N@std@C@vector>#$@N@std@C@allocator>#b#&$@N@std@C@basic_ifstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 13,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.h",
+                "kind" : 6,
+                "line" : 112,
+                "name" : "saveVector2D(const std::vector<std::vector<T> > &, std::ofstream &)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@FT@>1#TsaveVector2D#&1>@N@std@CT>2#T#T@vector2>@N@std@CT>2#T#T@vector2t0.0>@N@std@CT>1#T@allocator1S3_>@N@std@CT>1#T@allocator1S2_#&$@N@std@C@basic_ofstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 13,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.h",
+                "kind" : 6,
+                "line" : 130,
+                "name" : "readVector2D(std::vector<std::vector<T> > &, std::ifstream &)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@FT@>1#TreadVector2D#&>@N@std@CT>2#T#T@vector2>@N@std@CT>2#T#T@vector2t0.0>@N@std@CT>1#T@allocator1S3_>@N@std@CT>1#T@allocator1S2_#&$@N@std@C@basic_ifstream>#C#$@N@std@S@char_traits>#C#"
+            },
+            {
+                "column" : 6,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.h",
+                "kind" : 6,
+                "line" : 214,
+                "name" : "drawWithoutReplacementFromVector(std::vector<T> &, const std::vector<T> &, std::mt19937_64 &, size_t)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@FT@>1#TdrawWithoutReplacementFromVector#&>@N@std@CT>2#T#T@vector2t0.0>@N@std@CT>1#T@allocator1S2_#&1S1_#&$@N@std@C@mersenne_twister_engine>#k#Vk64#Vk312#Vk156#Vk31#Vk13043109905998158313#Vk29#Vk6148914691236517205#Vk17#Vk8202884508482404352#Vk37#Vk18444473444759240704#Vk43#Vk6364136223846793005#k#"
+            },
+            {
+                "column" : 8,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.h",
+                "kind" : 6,
+                "line" : 236,
+                "name" : "mostFrequentClass(const std::vector<T> &, std::mt19937_64)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@FT@>1#TmostFrequentClass#&1>@N@std@CT>2#T#T@vector2t0.0>@N@std@CT>1#T@allocator1S2_#$@N@std@C@mersenne_twister_engine>#k#Vk64#Vk312#Vk156#Vk31#Vk13043109905998158313#Vk29#Vk6148914691236517205#Vk17#Vk8202884508482404352#Vk37#Vk18444473444759240704#Vk43#Vk6364136223846793005#"
+            },
+            {
+                "column" : 21,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.h",
+                "kind" : 6,
+                "line" : 409,
+                "name" : "order(const std::vector<T> &, bool)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@FT@>1#Torder#&1>@N@std@CT>2#T#T@vector2t0.0>@N@std@CT>1#T@allocator1S2_#b#"
+            },
+            {
+                "column" : 21,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.h",
+                "kind" : 6,
+                "line" : 429,
+                "name" : "rank(const std::vector<T> &)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@FT@>1#Trank#&1>@N@std@CT>2#T#T@vector2t0.0>@N@std@CT>1#T@allocator1S2_#"
+            },
+            {
+                "column" : 13,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.h",
+                "kind" : 6,
+                "line" : 494,
+                "name" : "chkIntFn(void *)",
+                "parent_name" : "",
+                "usr" : "c:utility.h@17374@N@diversityForest@F@chkIntFn#*v#"
+            },
+            {
+                "column" : 13,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.h",
+                "kind" : 6,
+                "line" : 498,
+                "name" : "checkInterrupt",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@F@checkInterrupt#"
+            },
+            {
+                "column" : 26,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.h",
+                "kind" : 2,
+                "line" : 506,
+                "name" : "_Unique_if<T>",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@N@detail@ST>1#T@_Unique_if"
+            },
+            {
+                "column" : 30,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.h",
+                "kind" : 8,
+                "line" : 507,
+                "name" : "_Single_object",
+                "parent_name" : "",
+                "usr" : "c:utility.h@17640@N@diversityForest@N@detail@ST>1#T@_Unique_if@T@_Single_object"
+            },
+            {
+                "column" : 48,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.h",
+                "kind" : 6,
+                "line" : 521,
+                "name" : "make_unique(Args &&...)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@FT@>2#T#pTmake_unique#P&t0.1#"
+            },
+            {
+                "column" : 48,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.h",
+                "kind" : 6,
+                "line" : 526,
+                "name" : "make_unique(size_t)",
+                "parent_name" : "",
+                "usr" : "c:@N@diversityForest@FT@>1#Tmake_unique#k#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/utility.h",
+        "file_last_write" : 1549871974.000000
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 21,
+                "file" : "Z:/Projects/DiversityForests/diversityForest/src/utilityRcpp.cpp",
+                "kind" : 6,
+                "line" : 33,
+                "name" : "numSmaller(Rcpp::NumericVector, Rcpp::NumericVector)",
+                "parent_name" : "",
+                "usr" : "c:@F@numSmaller#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#S0_#"
+            }
+        ],
+        "file" : "Z:/Projects/DiversityForests/diversityForest/src/utilityRcpp.cpp",
+        "file_last_write" : 1549872136.000000
+    }
+]
