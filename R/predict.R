@@ -1,35 +1,35 @@
 # -------------------------------------------------------------------------------
-#   This file is part of diversityForest.
+#   This file is part of 'diversityForest'.
 #
-# diversityForest is free software: you can redistribute it and/or modify
+# 'diversityForest' is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
 #
-# diversityForest is distributed in the hope that it will be useful,
+# 'diversityForest' is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with diversityForest. If not, see <http://www.gnu.org/licenses/>.
+# along with 'diversityForest'. If not, see <http://www.gnu.org/licenses/>.
 #
-#  NOTE: diversityForest is a fork of the popular R package ranger, written by Marvin N. Wright.
-#  Most R and C++ code is identical with that of ranger. The package diversityForest
-#  was written by taking the original ranger code and making any
+#  NOTE: 'diversityForest' is a fork of the popular R package 'ranger', written by Marvin N. Wright.
+#  Most R and C++ code is identical with that of 'ranger'. The package 'diversityForest'
+#  was written by taking the original 'ranger' code and making any
 #  changes necessary to implement diversity forests.
 #
 # -------------------------------------------------------------------------------
 
 ##' Prediction with new data and a saved forest from \code{\link{divfor}}.
 ##' 
-##' This package is a fork of the R package ranger that implements random forests using an
-##' efficient C++ implementation. More precisely, diversityForest was written by modifying
-##' the code of ranger, version 0.11.0. Therefore, details on further functionalities
-##' of the code that are not presented in the help pages of diversityForest are found
-##' in the help pages of ranger (version 0.11.0). The code in the example sections of \code{\link{divfor}} and \code{\link{tunedivfor}} can be
+##' This package is a fork of the R package 'ranger' that implements random forests using an
+##' efficient C++ implementation. More precisely, 'diversityForest' was written by modifying
+##' the code of 'ranger', version 0.11.0. Therefore, details on further functionalities
+##' of the code that are not presented in the help pages of 'diversityForest' are found
+##' in the help pages of 'ranger' (version 0.11.0). The code in the example sections of \code{\link{divfor}} and \code{\link{tunedivfor}} can be
 ##' used as a template for all common application scenarios with respect to classification
-##' using univariate, binary splitting. Some function arguments adopted from the ranger 
+##' using univariate, binary splitting. Some function arguments adopted from the 'ranger' 
 ##' package are not be useable with diversity forests (for the current package version).
 
 ##'
@@ -57,11 +57,9 @@
 ##'       \code{num.samples}     \tab Number of samples.
 ##'   }
 ##' @references
-##' \itemize{
-##'   \item Wright, M. N. & Ziegler, A. (2017). divfor: A Fast Implementation of Random Forests for High Dimensional Data in C++ and R. J Stat Softw 77:1-17. \url{https://doi.org/10.18637/jss.v077.i01}.
-##'   \item Wager, S., Hastie T., & Efron, B. (2014). Confidence Intervals for Random Forests: The Jackknife and the Infinitesimal Jackknife. J Mach Learn Res 15:1625-1651. \url{http://jmlr.org/papers/v15/wager14a.html}.
-##'   \item Meinshausen (2006). Quantile Regression Forests. J Mach Learn Res 7:983-999. \url{http://www.jmlr.org/papers/v7/meinshausen06a.html}.  
-##'   }
+##' Wright, M. N. & Ziegler, A. (2017). "ranger: A fast Implementation of Random Forests for High Dimensional Data in C++ and R". J Stat Softw 77:1-17, <\doi{10.18637/jss.v077.i01}>.
+##' Wager, S., Hastie T., & Efron, B. (2014). "Confidence Intervals for Random Forests: The Jackknife and the Infinitesimal Jackknife". J Mach Learn Res 15:1625-1651. \url{http://jmlr.org/papers/v15/wager14a.html}.
+##' Meinshausen (2006). "Quantile Regression Forests". J Mach Learn Res 7:983-999. \url{http://www.jmlr.org/papers/v7/meinshausen06a.html}.
 ##' @seealso \code{\link{divfor}}
 ##' @author Marvin N. Wright
 ##' @export
@@ -482,15 +480,16 @@ predict.divfor.forest <- function(object, data, predict.all = FALSE,
       jab <- pmax(jack - bias, 0)
       result$se <- sqrt(jab)
     } else if (se.method == "infjack") {
-      if (forest$treetype == "Regression") {
-        infjack <- rInfJack(pred = result$predictions, inbag = inbag.counts, used.trees = 1:num.trees)
-        result$se <- sqrt(infjack$var.hat)
-      } else if (forest$treetype == "Probability estimation") {
-        infjack <- apply(result$predictions, 2, function(x) {
-          rInfJack(x, inbag.counts)$var.hat
-        })
-        result$se <- sqrt(infjack)
-      } 
+	  stop("Error: 'se.method == infjack' currently not supported for diversity forests.")
+      #if (forest$treetype == "Regression") {
+      #  infjack <- rInfJack(pred = result$predictions, inbag = inbag.counts, used.trees = 1:num.trees)
+      #  result$se <- sqrt(infjack$var.hat)
+      #} else if (forest$treetype == "Probability estimation") {
+      #  infjack <- apply(result$predictions, 2, function(x) {
+      #    rInfJack(x, inbag.counts)$var.hat
+      #  })
+      #  result$se <- sqrt(infjack)
+      #} 
     } else {
       stop("Error: Unknown standard error method (se.method).")
     }

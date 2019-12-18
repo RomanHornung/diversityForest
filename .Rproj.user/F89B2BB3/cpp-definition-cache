@@ -1647,7 +1647,7 @@
             }
         ],
         "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
-        "file_last_write" : 1575895879.000000
+        "file_last_write" : 1575995907.000000
     },
     {
         "definitions" : [
@@ -1727,7 +1727,7 @@
                 "line" : 39,
                 "name" : "allocateMemory",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@allocateMemory#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@allocateMemory#"
             },
             {
                 "column" : 28,
@@ -1736,7 +1736,7 @@
                 "line" : 55,
                 "name" : "estimate(size_t)",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@estimate#k#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@estimate#k#"
             },
             {
                 "column" : 26,
@@ -1745,25 +1745,25 @@
                 "line" : 75,
                 "name" : "appendToFileInternal(std::ofstream &)",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@appendToFileInternal#&$@N@std@C@basic_ofstream>#C#$@N@std@S@char_traits>#C#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@appendToFileInternal#&I#"
             },
             {
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
                 "line" : 79,
-                "name" : "splitNodeInternal(size_t, std::vector<size_t> &)",
+                "name" : "splitNodeInternal(size_t, int &)",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@splitNodeInternal#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@splitNodeInternal#k#&I#"
             },
             {
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
                 "line" : 122,
-                "name" : "splitNodeUnivariateInternal(size_t, std::vector<std::pair<size_t, double> >)",
+                "name" : "splitNodeUnivariateInternal(size_t, int)",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@splitNodeUnivariateInternal#k#$@N@std@C@vector>#$@N@std@S@pair>#k#d#$@N@std@C@allocator>#S1_#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@splitNodeUnivariateInternal#k#I#"
             },
             {
                 "column" : 26,
@@ -1772,7 +1772,7 @@
                 "line" : 159,
                 "name" : "createEmptyNodeInternal",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@createEmptyNodeInternal#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@createEmptyNodeInternal#"
             },
             {
                 "column" : 28,
@@ -1781,97 +1781,97 @@
                 "line" : 163,
                 "name" : "computePredictionAccuracyInternal",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@computePredictionAccuracyInternal#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@computePredictionAccuracyInternal#"
             },
             {
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
                 "line" : 178,
-                "name" : "findBestSplit(size_t, std::vector<size_t> &)",
+                "name" : "findBestSplit(size_t, int &)",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplit#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplit#k#&I#"
             },
             {
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
                 "line" : 246,
-                "name" : "findBestSplitUnivariate(size_t, std::vector<std::pair<size_t, double> >)",
+                "name" : "findBestSplitUnivariate(size_t, int)",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitUnivariate#k#$@N@std@C@vector>#$@N@std@S@pair>#k#d#$@N@std@C@allocator>#S1_#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitUnivariate#k#I#"
             },
             {
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
                 "line" : 359,
-                "name" : "findBestSplitValueSmallQ(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &)",
+                "name" : "findBestSplitValueSmallQ(size_t, size_t, size_t, const int &, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitValueSmallQ#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitValueSmallQ#k#k#k#&1I#k#&d#&k#S1_#"
             },
             {
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
                 "line" : 392,
-                "name" : "findBestSplitValueSmallQ(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &, const std::vector<double> &, std::vector<size_t> &, std::vector<size_t> &)",
+                "name" : "findBestSplitValueSmallQ(size_t, size_t, size_t, const int &, size_t, double &, size_t &, double &, const int &, int &, int &)",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitValueSmallQ#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#&1$@N@std@C@vector>#d#$@N@std@C@allocator>#d#&S1_#S8_#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitValueSmallQ#k#k#k#&1I#k#&d#&k#S1_#S0_#&I#S3_#"
             },
             {
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
                 "line" : 452,
-                "name" : "findBestSplitValueLargeQ(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &)",
+                "name" : "findBestSplitValueLargeQ(size_t, size_t, size_t, const int &, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitValueLargeQ#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitValueLargeQ#k#k#k#&1I#k#&d#&k#S1_#"
             },
             {
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
                 "line" : 525,
-                "name" : "findBestSplitValueUnordered(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &)",
+                "name" : "findBestSplitValueUnordered(size_t, size_t, size_t, const int &, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitValueUnordered#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitValueUnordered#k#k#k#&1I#k#&d#&k#S1_#"
             },
             {
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
                 "line" : 599,
-                "name" : "findBestSplitExtraTrees(size_t, std::vector<size_t> &)",
+                "name" : "findBestSplitExtraTrees(size_t, int &)",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitExtraTrees#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitExtraTrees#k#&I#"
             },
             {
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
                 "line" : 643,
-                "name" : "findBestSplitValueExtraTrees(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &)",
+                "name" : "findBestSplitValueExtraTrees(size_t, size_t, size_t, const int &, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitValueExtraTrees#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitValueExtraTrees#k#k#k#&1I#k#&d#&k#S1_#"
             },
             {
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
                 "line" : 678,
-                "name" : "findBestSplitValueExtraTrees(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &, const std::vector<double> &, std::vector<size_t> &, std::vector<size_t> &)",
+                "name" : "findBestSplitValueExtraTrees(size_t, size_t, size_t, const int &, size_t, double &, size_t &, double &, const int &, int &, int &)",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitValueExtraTrees#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#&1$@N@std@C@vector>#d#$@N@std@C@allocator>#d#&S1_#S8_#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitValueExtraTrees#k#k#k#&1I#k#&d#&k#S1_#S0_#&I#S3_#"
             },
             {
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
                 "line" : 733,
-                "name" : "findBestSplitValueExtraTreesUnordered(size_t, size_t, size_t, const std::vector<size_t> &, size_t, double &, size_t &, double &)",
+                "name" : "findBestSplitValueExtraTreesUnordered(size_t, size_t, size_t, const int &, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@findBestSplitValueExtraTreesUnordered#k#k#k#&1$@N@std@C@vector>#k#$@N@std@C@allocator>#k#k#&d#&k#S3_#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitValueExtraTreesUnordered#k#k#k#&1I#k#&d#&k#S1_#"
             },
             {
                 "column" : 26,
@@ -1880,7 +1880,7 @@
                 "line" : 836,
                 "name" : "addGiniImportance(size_t, size_t, double)",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@addGiniImportance#k#k#d#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@addGiniImportance#k#k#d#"
             },
             {
                 "column" : 26,
@@ -1889,7 +1889,7 @@
                 "line" : 869,
                 "name" : "bootstrapClassWise",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@bootstrapClassWise#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@bootstrapClassWise#"
             },
             {
                 "column" : 26,
@@ -1898,11 +1898,11 @@
                 "line" : 912,
                 "name" : "bootstrapWithoutReplacementClassWise",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@bootstrapWithoutReplacementClassWise#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@bootstrapWithoutReplacementClassWise#"
             }
         ],
         "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
-        "file_last_write" : 1550597474.000000
+        "file_last_write" : 1575995912.000000
     },
     {
         "definitions" : [

@@ -1,22 +1,22 @@
 # -------------------------------------------------------------------------------
-#   This file is part of diversityForest.
+#   This file is part of 'diversityForest'.
 #
-# diversityForest is free software: you can redistribute it and/or modify
+# 'diversityForest' is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
 #
-# diversityForest is distributed in the hope that it will be useful,
+# 'diversityForest' is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with diversityForest. If not, see <http://www.gnu.org/licenses/>.
+# along with 'diversityForest'. If not, see <http://www.gnu.org/licenses/>.
 #
-#  NOTE: diversityForest is a fork of the popular R package ranger, written by Marvin N. Wright.
-#  Most R and C++ code is identical with that of ranger. The package diversityForest
-#  was written by taking the original ranger code and making any
+#  NOTE: 'diversityForest' is a fork of the popular R package 'ranger', written by Marvin N. Wright.
+#  Most R and C++ code is identical with that of 'ranger'. The package 'diversityForest'
+#  was written by taking the original 'ranger' code and making any
 #  changes necessary to implement diversity forests.
 #
 # -------------------------------------------------------------------------------
@@ -41,14 +41,18 @@
 ##'   \item{\code{tunegrid}}{Two-dimensional \code{data.frame}, where each row contains one pair of values considered for \code{nsplits} (first entry) and \code{proptry} (second entry).}
 ##'   \item{\code{ooberrs}}{The out-of-bag prediction errors obtained for each pair of values considered for \code{nsplits} and \code{proptry}, where the ordering of pairs of values is the same as in \code{tunegrid} (see above).}
 ##' @examples
-##' \dontrun{
-##' require(diversityForest)
+##' library("diversityForest")
 ##' 
 ##' ## Set seed to obtain reproducible results:
 ##' set.seed(1234)
 ##'
 ##' ## Tuning parameter optimization for the iris data set
-##' tuneres <- tunedivfor(formula = Species ~ ., data = iris, num.trees.pre = 2000)
+##' tuneres <- tunedivfor(formula = Species ~ ., data = iris, num.trees.pre = 20)
+##' # NOTE: num.trees.pre = 20 is specified too small for practical 
+##' # purposes, because the out-of-bag error estimates of the forests 
+##' # constructed during optimization will be much too variable!!
+##' # In practice, num.trees.pre = 500 (default value) or a 
+##' # larger number should be used.
 ##' 
 ##' tuneres
 ##' 
@@ -59,9 +63,7 @@
 ##'
 ##' @author Roman Hornung
 ##' @references
-##' \itemize{
-##'   \item Wright, M. N. & Ziegler, A. (2017). ranger: A Fast Implementation of Random Forests for High Dimensional Data in C++ and R. J Stat Softw 77:1-17. \url{http://dx.doi.org/10.18637/jss.v077.i01}.
-##'   }
+##' Wright, M. N. & Ziegler, A. (2017). "ranger: A fast Implementation of Random Forests for High Dimensional Data in C++ and R". J Stat Softw 77:1-17, <\doi{10.18637/jss.v077.i01}>.
 ##' @seealso \code{\link{divfor}}
 ##' @encoding UTF-8
 ##' @useDynLib diversityForest, .registration = TRUE

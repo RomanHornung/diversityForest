@@ -49,21 +49,19 @@ Object of class \code{divfor.prediction} with elements
 Prediction with new data and a saved forest from \code{\link{divfor}}.
 }
 \details{
-This package is a fork of the R package ranger that implements random forests using an
-efficient C++ implementation. More precisely, diversityForest was written by modifying
-the code of ranger, version 0.11.0. Therefore, details on further functionalities
-of the code that are not presented in the help pages of diversityForest are found
-in the help pages of ranger (version 0.11.0). The code in the example sections of \code{\link{divfor}} and \code{\link{tunedivfor}} can be
+This package is a fork of the R package 'ranger' that implements random forests using an
+efficient C++ implementation. More precisely, 'diversityForest' was written by modifying
+the code of 'ranger', version 0.11.0. Therefore, details on further functionalities
+of the code that are not presented in the help pages of 'diversityForest' are found
+in the help pages of 'ranger' (version 0.11.0). The code in the example sections of \code{\link{divfor}} and \code{\link{tunedivfor}} can be
 used as a template for all common application scenarios with respect to classification
-using univariate, binary splitting. Some function arguments adopted from the ranger 
+using univariate, binary splitting. Some function arguments adopted from the 'ranger' 
 package are not be useable with diversity forests (for the current package version).
 }
 \references{
-\itemize{
-  \item Wright, M. N. & Ziegler, A. (2017). divfor: A Fast Implementation of Random Forests for High Dimensional Data in C++ and R. J Stat Softw 77:1-17. \url{https://doi.org/10.18637/jss.v077.i01}.
-  \item Wager, S., Hastie T., & Efron, B. (2014). Confidence Intervals for Random Forests: The Jackknife and the Infinitesimal Jackknife. J Mach Learn Res 15:1625-1651. \url{http://jmlr.org/papers/v15/wager14a.html}.
-  \item Meinshausen (2006). Quantile Regression Forests. J Mach Learn Res 7:983-999. \url{http://www.jmlr.org/papers/v7/meinshausen06a.html}.  
-  }
+Wright, M. N. & Ziegler, A. (2017). "ranger: A fast Implementation of Random Forests for High Dimensional Data in C++ and R". J Stat Softw 77:1-17, <\doi{10.18637/jss.v077.i01}>.
+Wager, S., Hastie T., & Efron, B. (2014). "Confidence Intervals for Random Forests: The Jackknife and the Infinitesimal Jackknife". J Mach Learn Res 15:1625-1651. \url{http://jmlr.org/papers/v15/wager14a.html}.
+Meinshausen (2006). "Quantile Regression Forests". J Mach Learn Res 7:983-999. \url{http://www.jmlr.org/papers/v7/meinshausen06a.html}.
 }
 \seealso{
 \code{\link{divfor}}

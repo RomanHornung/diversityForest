@@ -24,9 +24,9 @@ divfor(formula = NULL, data = NULL, num.trees = 500, mtry = NULL,
 
 \item{data}{Training data of class \code{data.frame}, \code{matrix}, \code{dgCMatrix} (Matrix) or \code{gwaa.data} (GenABEL).}
 
-\item{num.trees}{Number of trees.}
+\item{num.trees}{Number of trees. Default is 500.}
 
-\item{mtry}{Artefact from ranger. NOT needed for diversity forests.}
+\item{mtry}{Artefact from 'ranger'. NOT needed for diversity forests.}
 
 \item{importance}{Variable importance mode, one of 'none', 'impurity', 'impurity_corrected', 'permutation'. The 'impurity' measure is the Gini index for classification, the variance of the responses for regression and the sum of test statistics (see \code{splitrule}) for survival. NOTE: Currently, only "permutation" (and "none") work for diversity forests.}
 
@@ -48,7 +48,7 @@ divfor(formula = NULL, data = NULL, num.trees = 500, mtry = NULL,
 
 \item{splitrule}{Splitting rule. For classification and probability estimation "gini" or "extratrees" with default "gini". For regression "variance", "extratrees" or "maxstat" with default "variance". For survival "logrank", "extratrees", "C" or "maxstat" with default "logrank".}
 
-\item{num.random.splits}{Artefact from ranger. NOT needed for diversity forests.}
+\item{num.random.splits}{Artefact from 'ranger'. NOT needed for diversity forests.}
 
 \item{alpha}{For "maxstat" splitrule: Significance threshold to allow splitting.}
 
@@ -117,64 +117,76 @@ Object of class \code{divfor} with elements
 Implements diversity forests as presented in Hornung (inprep).
 Currently, only classification is supported, but regression and survival prediction will soon be possible.
 Moreover, the current version of the package only supports univariate, binary splitting, but future
-versions will allow using specific other split procedures. Because diversityForest is a fork of the 
-ranger R package (see below for details), the documentation is largely taken from
-ranger, where large parts of the documentation do not apply to the current version of the diversityForest package.
+versions will allow using specific other split procedures. Because 'diversityForest' is a fork of the 
+'ranger' R package (see below for details), the documentation is largely taken from
+'ranger', where large parts of the documentation do not apply to the current version of the 'diversityForest' package.
 Moreover, \code{divfor} contains function arguments that are currently not supported, but will be
 in future versions of the package. However, the package is fully functional with respect to applying 
 diversity forest for classification using univariate, binary splitting. See the example section
 for all basic application scenarios.
 }
 \details{
-As noted above, diversityForest is a fork of the R package ranger that implements random forests using an
-efficient C++ implementation. More precisely, diversityForest was written by modifying
-the code of ranger, version 0.11.0. Therefore, details on further functionalities
-of the code that are not presented in the help pages of diversityForest are found
-in the help pages of ranger (version 0.11.0). The code in the example sections of \code{\link{divfor}} and \code{\link{tunedivfor}}
+As noted above, 'diversityForest' is a fork of the R package 'ranger' that implements random forests using an
+efficient C++ implementation. More precisely, 'diversityForest' was written by modifying
+the code of 'ranger', version 0.11.0. Therefore, details on further functionalities
+of the code that are not presented in the help pages of 'diversityForest' are found
+in the help pages of 'ranger' (version 0.11.0). The code in the example sections of \code{\link{divfor}} and \code{\link{tunedivfor}}
 can be used as a template for all basic application scenarios with respect to classification
-using univariate, binary splitting. Some function arguments adopted from the ranger 
+using univariate, binary splitting. Some function arguments adopted from the 'ranger' 
 package are not be useable with diversity forests (for the current package version).
 }
 \examples{
-\dontrun{
-require(diversityForest)
+library("diversityForest")
 
 ## Set seed to obtain reproducible results:
 set.seed(1234)
 
 ## Diversity forest with default settings (NOT recommended)
-divfor(Species ~ ., data = iris)
+divfor(Species ~ ., data = iris, num.trees = 20)
+# NOTE: num.trees = 20 is specified too small for practical 
+# purposes, because the prediction performance of the resulting 
+# forest will be suboptimal!!
+# In practice, num.trees = 500 (default value) or a 
+# larger number should be used.
 
 ## Diversity forest with specified values for nsplits and proptry (NOT recommended)
-divfor(Species ~ ., data = iris, nsplits = 10, proptry = 0.4)
+divfor(Species ~ ., data = iris, nsplits = 10, proptry = 0.4, num.trees = 20)
+# NOTE again: num.trees = 20 is specified too small for practical purposes.
 
 ## Applying diversity forest after optimizing the values of nsplits and proptry (recommended)
-tuneres <- tunedivfor(formula = Species ~ ., data = iris)
-divfor(Species ~ ., data = iris, nsplits = tuneres$nsplitsopt, proptry = tuneres$proptryopt)
+tuneres <- tunedivfor(formula = Species ~ ., data = iris, num.trees.pre = 20)
+# NOTE: num.trees.pre = 20 is specified too small for practical 
+# purposes, because the out-of-bag error estimates of the forests 
+# constructed during optimization will be much too variable!!
+# In practice, num.trees.pre = 500 (default value) or a 
+# larger number should be used.
+divfor(Species ~ ., data = iris, nsplits = tuneres$nsplitsopt, 
+  proptry = tuneres$proptryopt, num.trees = 20)
+# NOTE again: num.trees = 20 is specified too small for practical purposes.
 
 ## Prediction
 train.idx <- sample(nrow(iris), 2/3 * nrow(iris))
 iris.train <- iris[train.idx, ]
 iris.test <- iris[-train.idx, ]
-tuneres <- tunedivfor(formula = Species ~ ., data = iris.train)
+tuneres <- tunedivfor(formula = Species ~ ., data = iris.train, num.trees.pre = 20)
+# NOTE again: num.trees.pre = 20 is specified too small for practical purposes.
 rg.iris <- divfor(Species ~ ., data = iris.train, nsplits = tuneres$nsplitsopt, 
-  proptry = tuneres$proptryopt)
+  proptry = tuneres$proptryopt, num.trees = 20)
+# NOTE again: num.trees = 20 is specified too small for practical purposes.
 pred.iris <- predict(rg.iris, data = iris.test)
 table(iris.test$Species, pred.iris$predictions)
 
 ## Variable importance
-rg.iris <- divfor(Species ~ ., data = iris, importance = "permutation")
+rg.iris <- divfor(Species ~ ., data = iris, importance = "permutation", num.trees = 20)
+# NOTE again: num.trees = 20 is specified too small for practical purposes.
 rg.iris$variable.importance
-}
 
 }
 \references{
-\itemize{
-  \item Wright, M. N. & Ziegler, A. (2017). ranger: A fast implementation of random forests for high dimensional data in C++ and R. J Stat Softw 77:1-17. \url{https://doi.org/10.18637/jss.v077.i01}.
-  \item Breiman, L. (2001). Random forests. Mach Learn, 45:5-32. \url{https://doi.org/10.1023/A:1010933404324}. 
-  \item Malley, J. D., Kruppa, J., Dasgupta, A., Malley, K. G., & Ziegler, A. (2012). Probability machines: consistent probability estimation using nonparametric learning machines. Methods Inf Med 51:74-81. \url{https://doi.org/10.3414/ME00-01-0052}.
-  \item Meinshausen (2006). Quantile Regression Forests. J Mach Learn Res 7:983-999. \url{http://www.jmlr.org/papers/v7/meinshausen06a.html}.
-  }
+Wright, M. N. & Ziegler, A. (2017). "ranger: A fast implementation of random forests for high dimensional data in C++ and R". J Stat Softw 77:1-17, <\doi{10.18637/jss.v077.i01}>.
+Breiman, L. (2001). "Random forests". Mach Learn, 45:5-32, <\doi{10.1023/A:1010933404324}>.
+Malley, J. D., Kruppa, J., Dasgupta, A., Malley, K. G., & Ziegler, A. (2012). "Probability machines: consistent probability estimation using nonparametric learning machines". Methods Inf Med 51:74-81, <\doi{10.3414/ME00-01-0052}>.
+Meinshausen (2006). "Quantile Regression Forests". J Mach Learn Res 7:983-999. \url{http://www.jmlr.org/papers/v7/meinshausen06a.html}.
 }
 \seealso{
 \code{\link{predict.divfor}}

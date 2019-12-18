@@ -35,10 +35,30 @@ values that is associated with the smallest out-of-bag prediction error. If seve
 parameter values are associated with the same smallest out-of-bag prediction error, the
 pair with the smallest (parameter) values is used.
 }
+\examples{
+library("diversityForest")
+
+## Set seed to obtain reproducible results:
+set.seed(1234)
+
+## Tuning parameter optimization for the iris data set
+tuneres <- tunedivfor(formula = Species ~ ., data = iris, num.trees.pre = 20)
+# NOTE: num.trees.pre = 20 is specified too small for practical 
+# purposes, because the out-of-bag error estimates of the forests 
+# constructed during optimization will be much too variable!!
+# In practice, num.trees.pre = 500 (default value) or a 
+# larger number should be used.
+
+tuneres
+
+tuneres$nsplitsopt
+tuneres$proptryopt
+tuneres$tunegrid
+tuneres$ooberrs
+
+}
 \references{
-\itemize{
-  \item Wright, M. N. & Ziegler, A. (2017). ranger: A Fast Implementation of Random Forests for High Dimensional Data in C++ and R. J Stat Softw 77:1-17. \url{http://dx.doi.org/10.18637/jss.v077.i01}.
-  }
+Wright, M. N. & Ziegler, A. (2017). "ranger: A fast Implementation of Random Forests for High Dimensional Data in C++ and R". J Stat Softw 77:1-17, <\doi{10.18637/jss.v077.i01}>.
 }
 \seealso{
 \code{\link{divfor}}
