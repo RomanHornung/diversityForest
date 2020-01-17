@@ -120,9 +120,9 @@ void Tree::grow(std::vector<double>* variable_importance) {
     if (is_terminal_node) {
       --num_open_nodes;
     } else {
-      ++num_open_nodes;
+      ++num_open_nodes; 
       if (i >= last_left_nodeID) {
-        // If new level, increase depth
+		// If new level, increase depth
         // (left_node saves left-most node in current level, new level reached if that node is splitted)
         last_left_nodeID = split_varIDs.size() - 2;
         ++depth;
@@ -130,7 +130,7 @@ void Tree::grow(std::vector<double>* variable_importance) {
     }
     ++i;
   }
-
+  
   // Delete sampleID vector to save memory
   sampleIDs.clear();
   sampleIDs.shrink_to_fit();
@@ -287,28 +287,37 @@ void Tree::drawSplitsUnivariate(size_t nodeID, size_t n_triedsplits, std::vector
   if (importance_mode == IMP_GINI_CORRECTED) {
     num_vars += data->getNumCols() - data->getNoSplitVariables().size();
   }
-  
-  
-  
+    
   // std::vector<size_t> all_varIDs; // Auskommentiert, weil das nicht funktioniert hat.
   // all_varIDs.reserve(num_vars - data->getNoSplitVariables().size());
-  std::vector<int> all_varIDs(num_vars - data->getNoSplitVariables().size());
-  std::iota (all_varIDs.begin(), all_varIDs.end(), 1);
+  std::vector<int> all_varIDsPre(num_vars - data->getNoSplitVariables().size());
+  std::iota (all_varIDsPre.begin(), all_varIDsPre.end(), 0);
   
+    std::vector<int> all_varIDs(num_vars - data->getNoSplitVariables().size());
+  
+    size_t countertemp = 0;
+    size_t varIDtemp = 0;
+  
+    for (auto& varID : all_varIDsPre) {
+		varIDtemp = varID;
+			        for (auto& skip_value : data->getNoSplitVariables()) {
+        if (varIDtemp >= skip_value) {
+          ++varIDtemp;
+        }
+      }
+	  all_varIDs[countertemp] = varIDtemp;
+	++countertemp;
+	}
+	
   // Cycle through all variables, count their numbers of split
   // points and add these up
   size_t n_splitstotal = 0;
   	  size_t n_triedsplitscandidate;
   for (auto& varID : all_varIDs) {
-    
+
     // Create possible split values for variable 'varID'
     std::vector<double> possible_split_values;
     data->getAllValues(possible_split_values, sampleIDs, varID, start_pos[nodeID], end_pos[nodeID]);
-   
-   // Rcpp::Rcout << " " << std::endl;
-   	// Rcpp::Rcout << "Splitpunkte: " << std::endl;
-   // std::copy(begin(possible_split_values), end(possible_split_values), std::ostream_iterator<double>(std::cout, " "));
-   // Rcpp::Rcout << " " << std::endl;
    
     // Add the number of split values up to the total number of
     // split values:
@@ -321,7 +330,7 @@ void Tree::drawSplitsUnivariate(size_t nodeID, size_t n_triedsplits, std::vector
         }
 
   } 
-  
+   
     // Die nachfolgende Option soll verwendet werden, zu verhindern, dass versucht wird, zu splitten,
   // obwohl gar keine Splitpunkte mehr da sind.
   // Evtl kann man das auch weglassen, je nachdem, ob das vielleicht
@@ -335,8 +344,6 @@ void Tree::drawSplitsUnivariate(size_t nodeID, size_t n_triedsplits, std::vector
   // use 'max_triedsplits':
   n_triedsplits = std::min(n_triedsplits, n_triedsplitscandidate);
   
-  // Rcpp::Rcout << "ntriedsplits: " << n_triedsplits << std::endl;
-  
   // If the result of n_triedsplits was zero, it is set to one,
   // because at least one split point should be used.
   //if (n_triedsplits == 0) {
@@ -344,16 +351,11 @@ void Tree::drawSplitsUnivariate(size_t nodeID, size_t n_triedsplits, std::vector
 //	return true;
   //}
   
-  // Rcpp::Rcout << "ntriedsplits: " << n_triedsplits << std::endl;
-  // Rcpp::Rcout << " " << std::endl;
-  // Rcpp::Rcout << " " << std::endl;
-  // Rcpp::Rcout << " " << std::endl;
-
     if (n_triedsplits > 0) {
     
   sampled_varIDs_values.reserve(n_triedsplits);
   
-  std::uniform_int_distribution<size_t> unif_distvarID(1, num_vars - data->getNoSplitVariables().size());
+  std::uniform_int_distribution<size_t> unif_distvarID(0, num_vars - 1 - data->getNoSplitVariables().size());
   
   size_t drawnvarID;
   double drawnvalue;
@@ -365,12 +367,13 @@ void Tree::drawSplitsUnivariate(size_t nodeID, size_t n_triedsplits, std::vector
 	
     do {
      
-	  // Rcpp::Rcout << "Schon drin: " << pairnotfound << std::endl;
-	  	  
       drawnvarID = unif_distvarID(random_number_generator);
-      
-	  // Rcpp::Rcout << "gezogene Variable: " << drawnvarID << std::endl;
-	  
+	        for (auto& skip_value : data->getNoSplitVariables()) {
+        if (drawnvarID >= skip_value) {
+          ++drawnvarID;
+        }
+      }
+      	  	
       // Create possible split values for variable 'varID'
       std::vector<double> possible_split_values;
       data->getAllValues(possible_split_values, sampleIDs, drawnvarID, start_pos[nodeID], end_pos[nodeID]);
@@ -378,10 +381,7 @@ void Tree::drawSplitsUnivariate(size_t nodeID, size_t n_triedsplits, std::vector
 	  pairnotfound = possible_split_values.size() < 2;
 	  
 	  if(!pairnotfound) {
-	   // Rcpp::Rcout << "Splitpunkte: " << std::endl;
-       // std::copy(begin(possible_split_values), end(possible_split_values), std::ostream_iterator<double>(std::cout, " "));
-	   // Rcpp::Rcout << " " << std::endl;
-	 
+
 	 	  std::vector<double> all_mid_points(possible_split_values.size()-1);
   // Compute decrease of impurity for each possible split
   for (size_t i = 0; i < possible_split_values.size()-1; ++i) {
@@ -392,8 +392,6 @@ void Tree::drawSplitsUnivariate(size_t nodeID, size_t n_triedsplits, std::vector
       
       drawnvalue = all_mid_points[unif_distvalue(random_number_generator)];
       
-	  // Rcpp::Rcout << "gezogener Splitpunkt: " << drawnvalue << std::endl;
-	  
       drawnpair = std::make_pair(drawnvarID, drawnvalue);
 	  
 	  pairnotfound = std::find(sampled_varIDs_values.begin(), sampled_varIDs_values.end(), drawnpair) != sampled_varIDs_values.end();
@@ -401,29 +399,24 @@ void Tree::drawSplitsUnivariate(size_t nodeID, size_t n_triedsplits, std::vector
 	  }
       
     } while (pairnotfound);
-    
+	
     sampled_varIDs_values.push_back(drawnpair);
 	
   }
-  
- //   std::vector<size_t> gezogenevars;
- // std::vector<double> gezogenepunkte;
- //  for (size_t i = 0; i < sampled_varIDs_values.size(); ++i) {
+    
+   //std::vector<size_t> gezogenevars;
+ //std::vector<double> gezogenepunkte;
+  //for (size_t i = 0; i < sampled_varIDs_values.size(); ++i) {
 //	gezogenevars.push_back(std::get<0>(sampled_varIDs_values[i]));
 //	gezogenepunkte.push_back(std::get<1>(sampled_varIDs_values[i]));
 //	}
 	
-	// Rcpp::Rcout << " " << std::endl;
-// Rcpp::Rcout << " " << std::endl;
-// Rcpp::Rcout << " " << std::endl;
-// Rcpp::Rcout << "Gezogene Variablen:" << std::endl;
-// std::copy(begin(gezogenevars), end(gezogenevars), std::ostream_iterator<size_t>(std::cout, " "));
-// Rcpp::Rcout << " " << std::endl;
-// Rcpp::Rcout << "Gezogene Punkte:" << std::endl;
-// std::copy(begin(gezogenepunkte), end(gezogenepunkte), std::ostream_iterator<double>(std::cout, " "));
-// Rcpp::Rcout << " " << std::endl;
-// std::get<0>(sampled_varIDs_values[42]);
-// std::get<1>(sampled_varIDs_values[42]);
+   //Rcpp::Rcout << "Gezogene Variablen:" << std::endl;
+  //std::copy(gezogenevars.begin(), gezogenevars.end(), std::ostream_iterator<size_t>(std::cout, " "));
+  //Rcpp::Rcout << "Gezogene Punkte:" << std::endl;
+  //std::copy(begin(gezogenepunkte), end(gezogenepunkte), std::ostream_iterator<double>(std::cout, " "));
+  //Rcpp::Rcout << " " << std::endl;
+ //Rcpp::Rcout << " " << std::endl;
     
   }
 
@@ -440,36 +433,6 @@ bool Tree::splitNode(size_t nodeID) {
   size_t n_triedsplits = (size_t) max_triedsplits; // asdf
   std::vector<std::pair<size_t, double>> sampled_varIDs_values;
   drawSplitsUnivariate(nodeID, n_triedsplits, sampled_varIDs_values); // asdf
-
-  
-  // Hier gehts weiter:
-  
-  // WICHTIG: Obige Funktion drawSplitsUnivariate passt noch nicht, weil
-  // da noch nicht die eigentlichen Splitpunkte gesameplet werden, welche
-  // zwischen den uniquen Werten liegen, sondern die uniquen Werte.
-  // --> To Do: Ausprobieren, ob der Standardcode von ranger auch
-  // genauso funktioniert, wenn man in den Funktionen findBestSplitValueSmallQ
-  // und findBestSplitValueLargeQ nicht die possible_split_values
-  // verewndet, sondern stattdessen gleich die Mittelpunkte zwischen
-  // diesen possible_split_values. Wenn das so ist, kann ich in
-  // drawSplitsUnivariate gleich die Mittelpunkte zwischen den 
-  // possible_split_values sampeln und die dann in den entsprechend
-  // abgeaenderten Funktionen findBestSplitValueSmallQ und
-  // findBestSplitValueLargeQ verwenden.
-  // Das kann ich herausfinden, in dem ich es einfach ausprobiere.
-  
-  // Oben wurden die Splitpunkte gesampelt. Wenn es entweder keinen einzigen
-  // Splitpunkt in den Variablen gibt oder wenn round(proptry * 'Anzahl Splitpunkte') = 0
-  // ist, gibt die obige Funktion 'drawSplitsUnivariate' true zurueck, in welchem
-  // Fall die Berechnung mit folgendem Ausdruck abgebrochen wird
-  // und wird demnach in einem Endknoten gelandet sind.
-  // Die mit obiger Funktion gesampelten Splitpunkte sind zudem
-  // alle tatsaechlich Splitpunkte, d.h. asdf
-  
-  
-  // if(nosplitpointsleft) {
-  //  return true;
-  // }
   
   // Perform the splitting:
   bool stop = splitNodeUnivariateInternal(nodeID, sampled_varIDs_values); // asdf
@@ -484,11 +447,6 @@ bool Tree::splitNode(size_t nodeID) {
   size_t split_varID = split_varIDs[nodeID];
   double split_value = split_values[nodeID];
 
-    // Rcpp::Rcout << " " << std::endl;
-  // Rcpp::Rcout << "split_varID: " << split_varID << std::endl;
-  // Rcpp::Rcout << "split_value: " << split_value << std::endl;
-  // Rcpp::Rcout << " " << std::endl;
-  
   // Save non-permuted variable for prediction
   split_varIDs[nodeID] = data->getUnpermutedVarID(split_varID);
 
@@ -542,7 +500,7 @@ bool Tree::splitNode(size_t nodeID) {
   // End position of left child is start position of right child
   end_pos[left_child_nodeID] = start_pos[right_child_nodeID];
   end_pos[right_child_nodeID] = end_pos[nodeID];
-  
+
   // No terminal node
   return false;
 }

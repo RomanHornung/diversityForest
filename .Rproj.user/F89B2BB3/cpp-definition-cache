@@ -1550,7 +1550,7 @@
                 "column" : 12,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
                 "kind" : 7,
-                "line" : 432,
+                "line" : 425,
                 "name" : "splitNode(size_t)",
                 "parent_name" : "Tree",
                 "usr" : "c:@N@diversityForest@S@Tree@F@splitNode#k#"
@@ -1559,7 +1559,7 @@
                 "column" : 12,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
                 "kind" : 7,
-                "line" : 550,
+                "line" : 508,
                 "name" : "createEmptyNode",
                 "parent_name" : "Tree",
                 "usr" : "c:@N@diversityForest@S@Tree@F@createEmptyNode#"
@@ -1568,7 +1568,7 @@
                 "column" : 14,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
                 "kind" : 7,
-                "line" : 561,
+                "line" : 519,
                 "name" : "dropDownSamplePermuted(size_t, size_t, size_t)",
                 "parent_name" : "Tree",
                 "usr" : "c:@N@diversityForest@S@Tree@F@dropDownSamplePermuted#k#k#k#"
@@ -1577,7 +1577,7 @@
                 "column" : 12,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
                 "kind" : 7,
-                "line" : 602,
+                "line" : 560,
                 "name" : "permuteAndPredictOobSamples(size_t, int &)",
                 "parent_name" : "Tree",
                 "usr" : "c:@N@diversityForest@S@Tree@F@permuteAndPredictOobSamples#k#&I#"
@@ -1586,7 +1586,7 @@
                 "column" : 12,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
                 "kind" : 7,
-                "line" : 615,
+                "line" : 573,
                 "name" : "bootstrap",
                 "parent_name" : "Tree",
                 "usr" : "c:@N@diversityForest@S@Tree@F@bootstrap#"
@@ -1595,7 +1595,7 @@
                 "column" : 12,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
                 "kind" : 7,
-                "line" : 650,
+                "line" : 608,
                 "name" : "bootstrapWeighted",
                 "parent_name" : "Tree",
                 "usr" : "c:@N@diversityForest@S@Tree@F@bootstrapWeighted#"
@@ -1604,7 +1604,7 @@
                 "column" : 12,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
                 "kind" : 7,
-                "line" : 693,
+                "line" : 651,
                 "name" : "bootstrapWithoutReplacement",
                 "parent_name" : "Tree",
                 "usr" : "c:@N@diversityForest@S@Tree@F@bootstrapWithoutReplacement#"
@@ -1613,7 +1613,7 @@
                 "column" : 12,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
                 "kind" : 7,
-                "line" : 709,
+                "line" : 667,
                 "name" : "bootstrapWithoutReplacementWeighted",
                 "parent_name" : "Tree",
                 "usr" : "c:@N@diversityForest@S@Tree@F@bootstrapWithoutReplacementWeighted#"
@@ -1622,7 +1622,7 @@
                 "column" : 12,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
                 "kind" : 7,
-                "line" : 743,
+                "line" : 701,
                 "name" : "bootstrapClassWise",
                 "parent_name" : "Tree",
                 "usr" : "c:@N@diversityForest@S@Tree@F@bootstrapClassWise#"
@@ -1631,7 +1631,7 @@
                 "column" : 12,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
                 "kind" : 7,
-                "line" : 747,
+                "line" : 705,
                 "name" : "bootstrapWithoutReplacementClassWise",
                 "parent_name" : "Tree",
                 "usr" : "c:@N@diversityForest@S@Tree@F@bootstrapWithoutReplacementClassWise#"
@@ -1640,14 +1640,14 @@
                 "column" : 12,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
                 "kind" : 7,
-                "line" : 751,
+                "line" : 709,
                 "name" : "setManualInbag",
                 "parent_name" : "Tree",
                 "usr" : "c:@N@diversityForest@S@Tree@F@setManualInbag#"
             }
         ],
         "file" : "Z:/Projects/DiversityForests/diversityForest/src/Tree.cpp",
-        "file_last_write" : 1575995907.000000
+        "file_last_write" : 1579266265.000000
     },
     {
         "definitions" : [
@@ -1796,7 +1796,7 @@
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
-                "line" : 246,
+                "line" : 237,
                 "name" : "findBestSplitUnivariate(size_t, int)",
                 "parent_name" : "TreeClassification",
                 "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitUnivariate#k#I#"
@@ -1805,7 +1805,7 @@
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
-                "line" : 359,
+                "line" : 333,
                 "name" : "findBestSplitValueSmallQ(size_t, size_t, size_t, const int &, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeClassification",
                 "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitValueSmallQ#k#k#k#&1I#k#&d#&k#S1_#"
@@ -1814,7 +1814,7 @@
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
-                "line" : 392,
+                "line" : 360,
                 "name" : "findBestSplitValueSmallQ(size_t, size_t, size_t, const int &, size_t, double &, size_t &, double &, const int &, int &, int &)",
                 "parent_name" : "TreeClassification",
                 "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitValueSmallQ#k#k#k#&1I#k#&d#&k#S1_#S0_#&I#S3_#"
@@ -1823,7 +1823,7 @@
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
-                "line" : 452,
+                "line" : 420,
                 "name" : "findBestSplitValueLargeQ(size_t, size_t, size_t, const int &, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeClassification",
                 "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitValueLargeQ#k#k#k#&1I#k#&d#&k#S1_#"
@@ -1832,7 +1832,7 @@
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
-                "line" : 525,
+                "line" : 493,
                 "name" : "findBestSplitValueUnordered(size_t, size_t, size_t, const int &, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeClassification",
                 "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitValueUnordered#k#k#k#&1I#k#&d#&k#S1_#"
@@ -1841,7 +1841,7 @@
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
-                "line" : 599,
+                "line" : 567,
                 "name" : "findBestSplitExtraTrees(size_t, int &)",
                 "parent_name" : "TreeClassification",
                 "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitExtraTrees#k#&I#"
@@ -1850,7 +1850,7 @@
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
-                "line" : 643,
+                "line" : 611,
                 "name" : "findBestSplitValueExtraTrees(size_t, size_t, size_t, const int &, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeClassification",
                 "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitValueExtraTrees#k#k#k#&1I#k#&d#&k#S1_#"
@@ -1859,7 +1859,7 @@
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
-                "line" : 678,
+                "line" : 646,
                 "name" : "findBestSplitValueExtraTrees(size_t, size_t, size_t, const int &, size_t, double &, size_t &, double &, const int &, int &, int &)",
                 "parent_name" : "TreeClassification",
                 "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitValueExtraTrees#k#k#k#&1I#k#&d#&k#S1_#S0_#&I#S3_#"
@@ -1868,7 +1868,7 @@
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
-                "line" : 733,
+                "line" : 701,
                 "name" : "findBestSplitValueExtraTreesUnordered(size_t, size_t, size_t, const int &, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeClassification",
                 "usr" : "c:@N@diversityForest@S@TreeClassification@F@findBestSplitValueExtraTreesUnordered#k#k#k#&1I#k#&d#&k#S1_#"
@@ -1877,7 +1877,7 @@
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
-                "line" : 836,
+                "line" : 804,
                 "name" : "addGiniImportance(size_t, size_t, double)",
                 "parent_name" : "TreeClassification",
                 "usr" : "c:@N@diversityForest@S@TreeClassification@F@addGiniImportance#k#k#d#"
@@ -1886,7 +1886,7 @@
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
-                "line" : 869,
+                "line" : 837,
                 "name" : "bootstrapClassWise",
                 "parent_name" : "TreeClassification",
                 "usr" : "c:@N@diversityForest@S@TreeClassification@F@bootstrapClassWise#"
@@ -1895,14 +1895,14 @@
                 "column" : 26,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
                 "kind" : 7,
-                "line" : 912,
+                "line" : 880,
                 "name" : "bootstrapWithoutReplacementClassWise",
                 "parent_name" : "TreeClassification",
                 "usr" : "c:@N@diversityForest@S@TreeClassification@F@bootstrapWithoutReplacementClassWise#"
             }
         ],
         "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.cpp",
-        "file_last_write" : 1575995912.000000
+        "file_last_write" : 1579265209.000000
     },
     {
         "definitions" : [
@@ -1913,7 +1913,7 @@
                 "line" : 22,
                 "name" : "TreeClassification",
                 "parent_name" : "",
-                "usr" : "c:@N@diversityForest@C@TreeClassification"
+                "usr" : "c:@N@diversityForest@S@TreeClassification"
             },
             {
                 "column" : 10,
@@ -1922,7 +1922,7 @@
                 "line" : 42,
                 "name" : "getPrediction(size_t)",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@getPrediction#k#1"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@getPrediction#k#1"
             },
             {
                 "column" : 10,
@@ -1931,7 +1931,7 @@
                 "line" : 47,
                 "name" : "getPredictionTerminalNodeID(size_t)",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@getPredictionTerminalNodeID#k#1"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@getPredictionTerminalNodeID#k#1"
             },
             {
                 "column" : 8,
@@ -1940,11 +1940,11 @@
                 "line" : 92,
                 "name" : "cleanUpInternal",
                 "parent_name" : "TreeClassification",
-                "usr" : "c:@N@diversityForest@C@TreeClassification@F@cleanUpInternal#"
+                "usr" : "c:@N@diversityForest@S@TreeClassification@F@cleanUpInternal#"
             }
         ],
         "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeClassification.h",
-        "file_last_write" : 1550485163.000000
+        "file_last_write" : 1578999294.000000
     },
     {
         "definitions" : [
@@ -2189,176 +2189,176 @@
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 29,
+                "line" : 31,
                 "name" : "allocateMemory",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@allocateMemory#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@allocateMemory#"
             },
             {
                 "column" : 24,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 44,
+                "line" : 46,
                 "name" : "estimate(size_t)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@estimate#k#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@estimate#k#"
             },
             {
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 56,
+                "line" : 58,
                 "name" : "appendToFileInternal(std::ofstream &)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@appendToFileInternal#&$@N@std@C@basic_ofstream>#C#$@N@std@S@char_traits>#C#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@appendToFileInternal#&I#"
             },
             {
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 60,
-                "name" : "splitNodeInternal(size_t, std::vector<size_t> &)",
+                "line" : 62,
+                "name" : "splitNodeInternal(size_t, int &)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@splitNodeInternal#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@splitNodeInternal#k#&I#"
             },
             {
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 106,
-                "name" : "splitNodeUnivariateInternal(size_t, std::vector<std::pair<size_t, double> >)",
+                "line" : 108,
+                "name" : "splitNodeUnivariateInternal(size_t, int)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@splitNodeUnivariateInternal#k#$@N@std@C@vector>#$@N@std@S@pair>#k#d#$@N@std@C@allocator>#S1_#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@splitNodeUnivariateInternal#k#I#"
             },
             {
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 111,
+                "line" : 146,
                 "name" : "createEmptyNodeInternal",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@createEmptyNodeInternal#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@createEmptyNodeInternal#"
             },
             {
                 "column" : 24,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 115,
+                "line" : 150,
                 "name" : "computePredictionAccuracyInternal",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@computePredictionAccuracyInternal#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@computePredictionAccuracyInternal#"
             },
             {
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 130,
-                "name" : "findBestSplit(size_t, std::vector<size_t> &)",
+                "line" : 165,
+                "name" : "findBestSplit(size_t, int &)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplit#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@findBestSplit#k#&I#"
             },
             {
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 184,
-                "name" : "findBestSplitUnivariate(size_t, std::vector<std::pair<size_t, double> >)",
+                "line" : 219,
+                "name" : "findBestSplitUnivariate(size_t, int)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitUnivariate#k#$@N@std@C@vector>#$@N@std@S@pair>#k#d#$@N@std@C@allocator>#S1_#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@findBestSplitUnivariate#k#I#"
             },
             {
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 189,
+                "line" : 322,
                 "name" : "findBestSplitValueSmallQ(size_t, size_t, double, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitValueSmallQ#k#k#d#k#&d#&k#S0_#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@findBestSplitValueSmallQ#k#k#d#k#&d#&k#S0_#"
             },
             {
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 216,
-                "name" : "findBestSplitValueSmallQ(size_t, size_t, double, size_t, double &, size_t &, double &, std::vector<double>, std::vector<double> &, std::vector<size_t> &)",
+                "line" : 349,
+                "name" : "findBestSplitValueSmallQ(size_t, size_t, double, size_t, double &, size_t &, double &, int, int &, int &)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitValueSmallQ#k#k#d#k#&d#&k#S0_#$@N@std@C@vector>#d#$@N@std@C@allocator>#d#&S2_#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@findBestSplitValueSmallQ#k#k#d#k#&d#&k#S0_#I#&I#S2_#"
             },
             {
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 266,
+                "line" : 399,
                 "name" : "findBestSplitValueLargeQ(size_t, size_t, double, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitValueLargeQ#k#k#d#k#&d#&k#S0_#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@findBestSplitValueLargeQ#k#k#d#k#&d#&k#S0_#"
             },
             {
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 326,
+                "line" : 459,
                 "name" : "findBestSplitValueUnordered(size_t, size_t, double, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitValueUnordered#k#k#d#k#&d#&k#S0_#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@findBestSplitValueUnordered#k#k#d#k#&d#&k#S0_#"
             },
             {
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 389,
-                "name" : "findBestSplitMaxstat(size_t, std::vector<size_t> &)",
+                "line" : 522,
+                "name" : "findBestSplitMaxstat(size_t, int &)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitMaxstat#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@findBestSplitMaxstat#k#&I#"
             },
             {
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 492,
-                "name" : "findBestSplitExtraTrees(size_t, std::vector<size_t> &)",
+                "line" : 625,
+                "name" : "findBestSplitExtraTrees(size_t, int &)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitExtraTrees#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@findBestSplitExtraTrees#k#&I#"
             },
             {
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 534,
+                "line" : 667,
                 "name" : "findBestSplitValueExtraTrees(size_t, size_t, double, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitValueExtraTrees#k#k#d#k#&d#&k#S0_#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@findBestSplitValueExtraTrees#k#k#d#k#&d#&k#S0_#"
             },
             {
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 569,
-                "name" : "findBestSplitValueExtraTrees(size_t, size_t, double, size_t, double &, size_t &, double &, std::vector<double>, std::vector<double> &, std::vector<size_t> &)",
+                "line" : 702,
+                "name" : "findBestSplitValueExtraTrees(size_t, size_t, double, size_t, double &, size_t &, double &, int, int &, int &)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitValueExtraTrees#k#k#d#k#&d#&k#S0_#$@N@std@C@vector>#d#$@N@std@C@allocator>#d#&S2_#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@findBestSplitValueExtraTrees#k#k#d#k#&d#&k#S0_#I#&I#S2_#"
             },
             {
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 613,
+                "line" : 746,
                 "name" : "findBestSplitValueExtraTreesUnordered(size_t, size_t, double, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@findBestSplitValueExtraTreesUnordered#k#k#d#k#&d#&k#S0_#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@findBestSplitValueExtraTreesUnordered#k#k#d#k#&d#&k#S0_#"
             },
             {
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
                 "kind" : 7,
-                "line" : 705,
+                "line" : 838,
                 "name" : "addImpurityImportance(size_t, size_t, double)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@addImpurityImportance#k#k#d#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@addImpurityImportance#k#k#d#"
             }
         ],
         "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.cpp",
-        "file_last_write" : 1549972177.000000
+        "file_last_write" : 1579265098.000000
     },
     {
         "definitions" : [
@@ -2369,7 +2369,7 @@
                 "line" : 22,
                 "name" : "TreeRegression",
                 "parent_name" : "",
-                "usr" : "c:@N@diversityForest@C@TreeRegression"
+                "usr" : "c:@N@diversityForest@S@TreeRegression"
             },
             {
                 "column" : 10,
@@ -2378,7 +2378,7 @@
                 "line" : 41,
                 "name" : "getPrediction(size_t)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@getPrediction#k#1"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@getPrediction#k#1"
             },
             {
                 "column" : 10,
@@ -2387,7 +2387,7 @@
                 "line" : 46,
                 "name" : "getPredictionTerminalNodeID(size_t)",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@getPredictionTerminalNodeID#k#1"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@getPredictionTerminalNodeID#k#1"
             },
             {
                 "column" : 8,
@@ -2396,11 +2396,11 @@
                 "line" : 85,
                 "name" : "cleanUpInternal",
                 "parent_name" : "TreeRegression",
-                "usr" : "c:@N@diversityForest@C@TreeRegression@F@cleanUpInternal#"
+                "usr" : "c:@N@diversityForest@S@TreeRegression@F@cleanUpInternal#"
             }
         ],
         "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeRegression.h",
-        "file_last_write" : 1549972177.000000
+        "file_last_write" : 1578999294.000000
     },
     {
         "definitions" : [
@@ -2408,185 +2408,185 @@
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 39,
+                "line" : 41,
                 "name" : "allocateMemory",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@allocateMemory#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@allocateMemory#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 45,
+                "line" : 47,
                 "name" : "appendToFileInternal(std::ofstream &)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@appendToFileInternal#&$@N@std@C@basic_ofstream>#C#$@N@std@S@char_traits>#C#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@appendToFileInternal#&I#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 60,
+                "line" : 62,
                 "name" : "createEmptyNodeInternal",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@createEmptyNodeInternal#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@createEmptyNodeInternal#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 64,
+                "line" : 66,
                 "name" : "computeSurvival(size_t)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@computeSurvival#k#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@computeSurvival#k#"
             },
             {
                 "column" : 22,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 77,
+                "line" : 79,
                 "name" : "computePredictionAccuracyInternal",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@computePredictionAccuracyInternal#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@computePredictionAccuracyInternal#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 90,
-                "name" : "splitNodeInternal(size_t, std::vector<size_t> &)",
+                "line" : 92,
+                "name" : "splitNodeInternal(size_t, int &)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@splitNodeInternal#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@splitNodeInternal#k#&I#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 102,
-                "name" : "splitNodeUnivariateInternal(size_t, std::vector<std::pair<size_t, double> >)",
+                "line" : 104,
+                "name" : "splitNodeUnivariateInternal(size_t, int)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@splitNodeUnivariateInternal#k#$@N@std@C@vector>#$@N@std@S@pair>#k#d#$@N@std@C@allocator>#S1_#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@splitNodeUnivariateInternal#k#I#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 107,
-                "name" : "findBestSplit(size_t, std::vector<size_t> &)",
+                "line" : 109,
+                "name" : "findBestSplit(size_t, int &)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplit#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@findBestSplit#k#&I#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 161,
-                "name" : "findBestSplitUnivariate(size_t, std::vector<std::pair<size_t, double> >)",
+                "line" : 163,
+                "name" : "findBestSplitUnivariate(size_t, int)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplitUnivariate#k#$@N@std@C@vector>#$@N@std@S@pair>#k#d#$@N@std@C@allocator>#S1_#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@findBestSplitUnivariate#k#I#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 166,
-                "name" : "findBestSplitMaxstat(size_t, std::vector<size_t> &)",
+                "line" : 274,
+                "name" : "findBestSplitMaxstat(size_t, int &)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplitMaxstat#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@findBestSplitMaxstat#k#&I#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 291,
+                "line" : 399,
                 "name" : "computeDeathCounts(size_t)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@computeDeathCounts#k#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@computeDeathCounts#k#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 319,
-                "name" : "computeChildDeathCounts(size_t, size_t, std::vector<double> &, std::vector<size_t> &, std::vector<size_t> &, std::vector<size_t> &, size_t)",
+                "line" : 427,
+                "name" : "computeChildDeathCounts(size_t, size_t, int &, int &, int &, int &, size_t)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@computeChildDeathCounts#k#k#&$@N@std@C@vector>#d#$@N@std@C@allocator>#d#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#S3_#S3_#k#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@computeChildDeathCounts#k#k#&I#S0_#S0_#S0_#k#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 345,
+                "line" : 453,
                 "name" : "findBestSplitValueLogRank(size_t, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplitValueLogRank#k#k#&d#&k#S0_#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@findBestSplitValueLogRank#k#k#&d#&k#S0_#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 420,
+                "line" : 528,
                 "name" : "findBestSplitValueLogRankUnordered(size_t, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplitValueLogRankUnordered#k#k#&d#&k#S0_#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@findBestSplitValueLogRankUnordered#k#k#&d#&k#S0_#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 517,
+                "line" : 625,
                 "name" : "findBestSplitValueAUC(size_t, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplitValueAUC#k#k#&d#&k#S0_#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@findBestSplitValueAUC#k#k#&d#&k#S0_#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 586,
-                "name" : "computeAucSplit(double, double, double, double, double, double, size_t, std::vector<double> &, std::vector<double> &, std::vector<double> &)",
+                "line" : 694,
+                "name" : "computeAucSplit(double, double, double, double, double, double, size_t, int &, int &, int &)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@computeAucSplit#d#d#d#d#d#d#k#&$@N@std@C@vector>#d#$@N@std@C@allocator>#d#S0_#S0_#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@computeAucSplit#d#d#d#d#d#d#k#&I#S0_#S0_#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 652,
-                "name" : "findBestSplitExtraTrees(size_t, std::vector<size_t> &)",
+                "line" : 760,
+                "name" : "findBestSplitExtraTrees(size_t, int &)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplitExtraTrees#k#&$@N@std@C@vector>#k#$@N@std@C@allocator>#k#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@findBestSplitExtraTrees#k#&I#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 701,
+                "line" : 809,
                 "name" : "findBestSplitValueExtraTrees(size_t, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplitValueExtraTrees#k#k#&d#&k#S0_#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@findBestSplitValueExtraTrees#k#k#&d#&k#S0_#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 779,
+                "line" : 887,
                 "name" : "findBestSplitValueExtraTreesUnordered(size_t, size_t, double &, size_t &, double &)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@findBestSplitValueExtraTreesUnordered#k#k#&d#&k#S0_#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@findBestSplitValueExtraTreesUnordered#k#k#&d#&k#S0_#"
             },
             {
                 "column" : 20,
                 "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
                 "kind" : 7,
-                "line" : 904,
+                "line" : 1012,
                 "name" : "addImpurityImportance(size_t, size_t, double)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@addImpurityImportance#k#k#d#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@addImpurityImportance#k#k#d#"
             }
         ],
         "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.cpp",
-        "file_last_write" : 1549972177.000000
+        "file_last_write" : 1579264423.000000
     },
     {
         "definitions" : [
@@ -2597,7 +2597,7 @@
                 "line" : 22,
                 "name" : "TreeSurvival",
                 "parent_name" : "",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival"
             },
             {
                 "column" : 43,
@@ -2606,7 +2606,7 @@
                 "line" : 41,
                 "name" : "getChf",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@getChf#1"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@getChf#1"
             },
             {
                 "column" : 30,
@@ -2615,7 +2615,7 @@
                 "line" : 45,
                 "name" : "getPrediction(size_t)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@getPrediction#k#1"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@getPrediction#k#1"
             },
             {
                 "column" : 10,
@@ -2624,7 +2624,7 @@
                 "line" : 50,
                 "name" : "getPredictionTerminalNodeID(size_t)",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@getPredictionTerminalNodeID#k#1"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@getPredictionTerminalNodeID#k#1"
             },
             {
                 "column" : 8,
@@ -2633,11 +2633,11 @@
                 "line" : 95,
                 "name" : "cleanUpInternal",
                 "parent_name" : "TreeSurvival",
-                "usr" : "c:@N@diversityForest@C@TreeSurvival@F@cleanUpInternal#"
+                "usr" : "c:@N@diversityForest@S@TreeSurvival@F@cleanUpInternal#"
             }
         ],
         "file" : "Z:/Projects/DiversityForests/diversityForest/src/TreeSurvival.h",
-        "file_last_write" : 1549972177.000000
+        "file_last_write" : 1579022983.000000
     },
     {
         "definitions" : [

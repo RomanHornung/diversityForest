@@ -28,10 +28,10 @@
 ##' the code of 'ranger', version 0.11.0. Therefore, details on further functionalities
 ##' of the code that are not presented in the help pages of 'diversityForest' are found
 ##' in the help pages of 'ranger' (version 0.11.0). The code in the example sections of \code{\link{divfor}} and \code{\link{tunedivfor}} can be
-##' used as a template for all common application scenarios with respect to classification
-##' using univariate, binary splitting. Some function arguments adopted from the 'ranger' 
-##' package are not be useable with diversity forests (for the current package version).
-
+##' used as a template for all common application scenarios with respect to classification,
+##' regression and survival prediction using univariate, binary splitting. Some function 
+##' arguments adopted from the 'ranger' package are not be useable with diversity forests
+##' (for the current package version).
 ##'
 ##' @title Diversity Forest prediction
 ##' @param object \code{divfor} object.
