@@ -275,31 +275,51 @@ void Tree::createPossibleSplitVarSubset(std::vector<size_t>& result) {
 }
 
 // asdf: New function.
-// This function determines the number of split points to sample,
-// that is, the number of all possible split points times the value
-// of 'proprtry', but at maximum the number given by 'max_triedsplits'.
+// This function samples the pairs of variable IDs and splits in these
+// variables.
 void Tree::drawSplitsUnivariate(size_t nodeID, size_t n_triedsplits, std::vector<std::pair<size_t, double>>& sampled_varIDs_values) { // katze
   
-  // Determine the indices of all variables
+  // Get the total number of variables
   size_t num_vars = data->getNumCols();
   
   // For corrected Gini importance add dummy variables
   if (importance_mode == IMP_GINI_CORRECTED) {
     num_vars += data->getNumCols() - data->getNoSplitVariables().size();
   }
-    
-  // std::vector<size_t> all_varIDs; // Auskommentiert, weil das nicht funktioniert hat.
-  // all_varIDs.reserve(num_vars - data->getNoSplitVariables().size());
+  
+  // Determine the indices of the covariates:
+  ////////////////
+  
+  // REMARK: The covariates are not necessarily all variables
+  // different from the target variable, but there may be more
+  // variables which should not be used for splitting.
+  // For example in the survival case, we have two variables
+  // associated with the target variable, the time variable and
+  // the censoring indicator. Apart from this, it is also possible
+  // for the user to specify variables that should not be used
+  // for splitting ("no split variables").
+  // Therefore, when determening the indices of the covariates to
+  // use, we have to cycle through all variables and skip those
+  // variable that should not be used for splitting.
+  
+  // Initialize an empty vector of consecutive numbers 0, 1, 2, ...:
+  // REMARK: This vector will be modified to exclude the "no split variables":
   std::vector<int> all_varIDsPre(num_vars - data->getNoSplitVariables().size());
   std::iota (all_varIDsPre.begin(), all_varIDsPre.end(), 0);
   
+  // Initialize empty vector, which will contain the indices of
+  // the covariates:
     std::vector<int> all_varIDs(num_vars - data->getNoSplitVariables().size());
   
+  // Cycle through "all_varIDsPre" and skip the "no split variables":
     size_t countertemp = 0;
     size_t varIDtemp = 0;
   
     for (auto& varID : all_varIDsPre) {
 		varIDtemp = varID;
+		// Go through the "no split variables"; if the current variable
+		// "varID" is equal to the respective "no split variable",
+		// increase index of the current variable:
 			        for (auto& skip_value : data->getNoSplitVariables()) {
         if (varIDtemp >= skip_value) {
           ++varIDtemp;
@@ -310,7 +330,9 @@ void Tree::drawSplitsUnivariate(size_t nodeID, size_t n_triedsplits, std::vector
 	}
 	
   // Cycle through all variables, count their numbers of split
-  // points and add these up
+  // points and add these up:
+  ///////////////////////
+  
   size_t n_splitstotal = 0;
   	  size_t n_triedsplitscandidate;
   for (auto& varID : all_varIDs) {
@@ -323,6 +345,8 @@ void Tree::drawSplitsUnivariate(size_t nodeID, size_t n_triedsplits, std::vector
     // split values:
     n_splitstotal += possible_split_values.size() - 1;
 	
+	// Break the loop, if the number n_triedsplitscandidate = proptry * n_splitstotal
+	// already exceeds the maximum number of splits to sample:
 	n_triedsplitscandidate = (size_t)((double) n_splitstotal * proptry + 0.5);
 
 	   if (n_triedsplitscandidate > n_triedsplits) {
@@ -331,32 +355,28 @@ void Tree::drawSplitsUnivariate(size_t nodeID, size_t n_triedsplits, std::vector
 
   } 
    
-    // Die nachfolgende Option soll verwendet werden, zu verhindern, dass versucht wird, zu splitten,
-  // obwohl gar keine Splitpunkte mehr da sind.
-  // Evtl kann man das auch weglassen, je nachdem, ob das vielleicht
-  // von dem danach folgenden Code auch schon gemacht wird.
-  // if (n_splitstotal == 0) {
-  //    return true;
-  //}
-
   // If the calculated number of splits to sample
   // is larger than the maximum number of splits to sample 'max_triedsplits',
   // use 'max_triedsplits':
   n_triedsplits = std::min(n_triedsplits, n_triedsplitscandidate);
   
-  // If the result of n_triedsplits was zero, it is set to one,
-  // because at least one split point should be used.
-  //if (n_triedsplits == 0) {
-    //n_triedsplits = 1;
-//	return true;
-  //}
   
+  // Sample the pairs of variable IDs and splits:
+  //////////////////////
+  
+  // If "n_triedsplits" is zero no splits should be sampled,
+  // which will result in findBestSplitUnivariate() returning
+  // zero, leading the node splitting to stop:
     if (n_triedsplits > 0) {
     
+	
+	// Initialize:
   sampled_varIDs_values.reserve(n_triedsplits);
   
+  // Random number generator for the covariates:
   std::uniform_int_distribution<size_t> unif_distvarID(0, num_vars - 1 - data->getNoSplitVariables().size());
   
+  // Draw the covariate/split pairs by a loop:
   size_t drawnvarID;
   double drawnvalue;
   
@@ -365,8 +385,10 @@ void Tree::drawSplitsUnivariate(size_t nodeID, size_t n_triedsplits, std::vector
     std::pair <size_t, double> drawnpair;   
     bool pairnotfound = false;
 	
+	// Loop that stops as soon "pairnotfound" becomes FALSE.
     do {
      
+	 // Draw a covariate, while skipping the "no split variables":
       drawnvarID = unif_distvarID(random_number_generator);
 	        for (auto& skip_value : data->getNoSplitVariables()) {
         if (drawnvarID >= skip_value) {
@@ -374,36 +396,58 @@ void Tree::drawSplitsUnivariate(size_t nodeID, size_t n_triedsplits, std::vector
         }
       }
       	  	
-      // Create possible split values for variable 'varID'
+      // Create possible split values for variable 'varID':
       std::vector<double> possible_split_values;
       data->getAllValues(possible_split_values, sampleIDs, drawnvarID, start_pos[nodeID], end_pos[nodeID]);
       
+	  // The pair is declared not found if there is only one
+	  // or less possible split values in the drawn covariate
+	  // (and a new variable will be drawn as a consequence)
+	  // REMINDER: This might be computationally (very) ineffective
+	  // for higher dimensional data with many dichotome covariates,
+	  // because here it can happen that there will be no possible
+	  // splits in a large quantity of covariates after a few splits,
+	  // which might have the effect that the process of drawing the
+	  // covariate has to repeated many times before a suitable
+	  // covariate has been drawn. For this reason it might be
+	  // better to store the indices of the covariates for which
+	  // there are no splits left, so that these are not drawn
+	  // again and again.
 	  pairnotfound = possible_split_values.size() < 2;
-	  
+
 	  if(!pairnotfound) {
 
+	  // Determine the splits in the drawn covariates, which are the mid points
+	  // between the neighboring covariate values:
 	 	  std::vector<double> all_mid_points(possible_split_values.size()-1);
-  // Compute decrease of impurity for each possible split
   for (size_t i = 0; i < possible_split_values.size()-1; ++i) {
       all_mid_points[i] = (possible_split_values[i] + possible_split_values[i + 1]) / 2;
     }
 	 
+	 // Random number generator for the splits:
       std::uniform_int_distribution<size_t> unif_distvalue(0, all_mid_points.size() - 1);
       
+	  // Draw a split:
       drawnvalue = all_mid_points[unif_distvalue(random_number_generator)];
       
+	  // Make the drawn covariate/split pair:
       drawnpair = std::make_pair(drawnvarID, drawnvalue);
 	  
+	  // Check whether this pair is already existent in the drawn pairs.
+	  // If this is the case, "pairnotfound" will be set to false
+	  // and the search for a suitable pair continues.
 	  pairnotfound = std::find(sampled_varIDs_values.begin(), sampled_varIDs_values.end(), drawnpair) != sampled_varIDs_values.end();
 	  
 	  }
       
     } while (pairnotfound);
 	
+	// Add the drawn pair to "sampled_varIDs_values":
     sampled_varIDs_values.push_back(drawnpair);
 	
   }
     
+	// Some console outputs I had used, while developing the function:
    //std::vector<size_t> gezogenevars;
  //std::vector<double> gezogenepunkte;
   //for (size_t i = 0; i < sampled_varIDs_values.size(); ++i) {
@@ -424,21 +468,15 @@ void Tree::drawSplitsUnivariate(size_t nodeID, size_t n_triedsplits, std::vector
 
 bool Tree::splitNode(size_t nodeID) {
 
-  // Select random subset of variables to possibly split at  \\ Roman
-  // std::vector<size_t> possible_split_varIDs;
-  // createPossibleSplitVarSubset(possible_split_varIDs);
-
   // Draw the variables and the candidate splits - after performing this step,
   // sampled_varIDs_values will contain the variables and candidate splits:
   size_t n_triedsplits = (size_t) max_triedsplits; // asdf
   std::vector<std::pair<size_t, double>> sampled_varIDs_values;
   drawSplitsUnivariate(nodeID, n_triedsplits, sampled_varIDs_values); // asdf
   
-  // Perform the splitting:
+  // Perform the splitting using the subclass method:
   bool stop = splitNodeUnivariateInternal(nodeID, sampled_varIDs_values); // asdf
-    
-  // Call subclass method, sets split_varIDs and split_values
-  // bool stop = splitNodeInternal(nodeID, possible_split_varIDs);
+  
   if (stop) {
     // Terminal node
     return true;

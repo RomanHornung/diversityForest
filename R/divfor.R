@@ -26,7 +26,7 @@
 ##' Moreover, the current version of the package only supports univariate, binary splitting, but future
 ##' versions will allow using specific other split procedures. Because 'diversityForest' is a fork of the 
 ##' 'ranger' R package (see below for details), the documentation is largely taken from
-##' 'ranger', where large parts of the documentation do not apply to the current version of the 'diversityForest' package.
+##' 'ranger', where large parts of the documentation do not apply to (the current version of) the 'diversityForest' package.
 ##' Moreover, \code{divfor} contains function arguments that are currently not supported, but will be
 ##' in future versions of the package. However, the package is fully functional with respect to applying 
 ##' diversity forest using univariate, binary splitting. See the example section
@@ -55,10 +55,10 @@
 ##' @param sample.fraction Fraction of observations to sample. Default is 1 for sampling with replacement and 0.632 for sampling without replacement. For classification, this can be a vector of class-specific values. 
 ##' @param case.weights Weights for sampling of training observations. Observations with larger weights will be selected with higher probability in the bootstrap (or subsampled) samples for the trees.
 ##' @param class.weights Weights for the outcome classes (in order of the factor levels) in the splitting rule (cost sensitive learning). Classification and probability prediction only. For classification the weights are also applied in the majority vote in terminal nodes.
-##' @param splitrule Splitting rule. For classification and probability estimation "gini" or "extratrees" with default "gini". For regression "variance", "extratrees" or "maxstat" with default "variance". For survival "logrank", "extratrees", "C" or "maxstat" with default "logrank". 
+##' @param splitrule Splitting rule. For classification and probability estimation "gini" or "extratrees" with default "gini". For regression "variance", "extratrees" or "maxstat" with default "variance". For survival "logrank", "extratrees", "C" or "maxstat" with default "logrank". NOTE: For diversity forests currently only the default splitting rules are supported.
 ##' @param num.random.splits Artefact from 'ranger'. NOT needed for diversity forests.
-##' @param alpha For "maxstat" splitrule: Significance threshold to allow splitting.
-##' @param minprop For "maxstat" splitrule: Lower quantile of covariate distribution to be considered for splitting.
+##' @param alpha For "maxstat" splitrule: Significance threshold to allow splitting. NOT needed for diversity forests.
+##' @param minprop For "maxstat" splitrule: Lower quantile of covariate distribution to be considered for splitting. NOT needed for diversity forests.
 ##' @param split.select.weights Numeric vector with weights between 0 and 1, representing the probability to select variables for splitting. Alternatively, a list of size num.trees, containing split select weight vectors for each tree can be used.  
 ##' @param always.split.variables Currently not useable. Character vector with variable names to be always selected.
 ##' @param respect.unordered.factors Handling of unordered factor covariates. One of 'ignore' and 'order' (the option 'partition' possible in 'ranger' is not (yet) possible with diversity forests). Default is 'ignore'. Alternatively TRUE (='order') or FALSE (='ignore') can be used. 
@@ -72,8 +72,8 @@
 ##' @param save.memory Use memory saving (but slower) splitting mode. No effect for survival and GWAS data. Warning: This option slows down the tree growing, use only if you encounter memory problems. NOT needed for diversity forests.
 ##' @param verbose Show computation status and estimated runtime.
 ##' @param seed Random seed. Default is \code{NULL}, which generates the seed from \code{R}. Set to \code{0} to ignore the \code{R} seed. 
-##' @param dependent.variable.name Name of dependent variable, needed if no formula given. For survival forests this is the time variable. NOTE: Currently diversity forests are only possible using the formula interface; thus, \code{dependent.variable.name} must not be specified.
-##' @param status.variable.name Name of status variable, only applicable to survival data and needed if no formula given. Use 1 for event and 0 for censoring.
+##' @param dependent.variable.name Name of dependent variable, needed if no formula given. For survival forests this is the time variable. NOTE: Currently, diversity forests are only possible using the formula interface; thus, \code{dependent.variable.name} must not be specified.
+##' @param status.variable.name Name of status variable, only applicable to survival data and needed if no formula given. Use 1 for event and 0 for censoring. NOTE: Currently, diversity forests are only possible using the formula interface; thus, \code{status.variable.name} must not be specified.
 ##' @param classification Only needed if data is a matrix. Set to \code{TRUE} to grow a classification forest.
 ##' @param nsplits Number of candidate splits to sample for each split. Default is 30.
 ##' @param proptry parameter that restricts the number of candidate splits considered for small nodes. If \code{nsplits} is larger than \code{proptry} times the number of all possible splits, the number of candidate splits to draw is reduced to the largest integer smaller than \code{proptry} times the number of all possible splits. Default is 1, which corresponds to always using \code{nsplits} candidate splits.
@@ -114,7 +114,7 @@
 ##' library("survival")
 ##' divfor(Surv(time, status) ~ ., data = veteran, num.trees = 20, respect.unordered.factors = "order")
 ##' # NOTE: num.trees = 20 is specified too small for practical 
-##' # purposes, because the prediction performance of the resulting 
+##' # purposes - the prediction performance of the resulting 
 ##' # forest will be suboptimal!!
 ##' # In practice, num.trees = 500 (default value) or a 
 ##' # larger number should be used.
@@ -126,7 +126,7 @@
 ##' ## Applying diversity forest after optimizing the values of nsplits and proptry (recommended)
 ##' tuneres <- tunedivfor(formula = Species ~ ., data = iris, num.trees.pre = 20)
 ##' # NOTE: num.trees.pre = 20 is specified too small for practical 
-##' # purposes, because the out-of-bag error estimates of the forests 
+##' # purposes - the out-of-bag error estimates of the forests 
 ##' # constructed during optimization will be much too variable!!
 ##' # In practice, num.trees.pre = 500 (default value) or a 
 ##' # larger number should be used.
@@ -153,10 +153,12 @@
 ##'
 ##' @author Roman Hornung, Marvin N. Wright
 ##' @references
-##' Wright, M. N. & Ziegler, A. (2017). "ranger: A fast implementation of random forests for high dimensional data in C++ and R". J Stat Softw 77:1-17, <\doi{10.18637/jss.v077.i01}>.
-##' Breiman, L. (2001). "Random forests". Mach Learn, 45:5-32, <\doi{10.1023/A:1010933404324}>.
-##' Malley, J. D., Kruppa, J., Dasgupta, A., Malley, K. G., & Ziegler, A. (2012). "Probability machines: consistent probability estimation using nonparametric learning machines". Methods Inf Med 51:74-81, <\doi{10.3414/ME00-01-0052}>.
-##' Meinshausen (2006). "Quantile Regression Forests". J Mach Learn Res 7:983-999. \url{http://www.jmlr.org/papers/v7/meinshausen06a.html}.
+##' \itemize{
+##'   \item Wright, M. N. & Ziegler, A. (2017). "ranger: A fast implementation of random forests for high dimensional data in C++ and R". J Stat Softw 77:1-17, <\doi{10.18637/jss.v077.i01}>.
+##'   \item Breiman, L. (2001). "Random forests". Mach Learn, 45:5-32, <\doi{10.1023/A:1010933404324}>.
+##'   \item Malley, J. D., Kruppa, J., Dasgupta, A., Malley, K. G., & Ziegler, A. (2012). "Probability machines: consistent probability estimation using nonparametric learning machines". Methods Inf Med 51:74-81, <\doi{10.3414/ME00-01-0052}>.
+##'   \item Meinshausen (2006). "Quantile Regression Forests". J Mach Learn Res 7:983-999. \url{http://www.jmlr.org/papers/v7/meinshausen06a.html}.
+##'   }
 ##' @seealso \code{\link{predict.divfor}}
 ##' @encoding UTF-8
 ##' @useDynLib diversityForest, .registration = TRUE
@@ -578,6 +580,21 @@ divfor <- function(formula = NULL, data = NULL, num.trees = 500, mtry = NULL,
   
   if (use.split.select.weights && use.always.split.variables) {
     stop("Error: Please use only one option of split.select.weights and always.split.variables.")
+  }
+
+  ## Currently, for diversity forests, only the default 
+  ## splitting rules are supported:  ## asdf
+    if (!is.null(splitrule)) {
+    if (treetype == 5 && splitrule != "logrank") {
+      splitrule <- "logrank"
+	  warning("'splitrule' changed to 'logrank' as currently only this option is available for diversity forests for survival.")
+    } else if (treetype == 3 && splitrule != "variance") {
+      splitrule <- "variance"
+	  	  warning("'splitrule' changed to 'variance' as currently only this option is available for diversity forests for regression.")
+    } else if (treetype %in% c(1, 9) && splitrule != "gini") {
+      splitrule <- "gini"
+	  	  	  warning("'splitrule' changed to 'gini' as currently only this option is available for diversity forests for classification.")
+    }
   }
   
   ## Splitting rule

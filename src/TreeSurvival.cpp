@@ -100,9 +100,10 @@ bool TreeSurvival::splitNodeInternal(size_t nodeID, std::vector<size_t>& possibl
   }
 }
 
-// asdf: New function
+// asdf: New function: Split node using univariate, binary splitting:
 bool TreeSurvival::splitNodeUnivariateInternal(size_t nodeID, std::vector<std::pair<size_t, double>> sampled_varIDs_values) {
-  
+
+  // Find best split, stop if no improvement in split criterion value
   return findBestSplitUnivariate(nodeID, sampled_varIDs_values);
 }
 
@@ -159,7 +160,8 @@ bool TreeSurvival::findBestSplit(size_t nodeID, std::vector<size_t>& possible_sp
   }
 }
 
-// asdf: New function
+// asdf: New function: Find the best split using univariate,
+// binary splitting:
 bool TreeSurvival::findBestSplitUnivariate(size_t nodeID, std::vector<std::pair<size_t, double>> sampled_varIDs_values) {
 
   double best_logrank = -1;
@@ -175,17 +177,22 @@ bool TreeSurvival::findBestSplitUnivariate(size_t nodeID, std::vector<std::pair<
     return true;
   }
   
+    // Only split if there is at least one sampled covariate/split pair:
   if(sampled_varIDs_values.size() > 0) {
     
 	  // Stop early if no split possible
   if (num_samples_node >= 2 * min_node_size) {
 
+    // Cycle through the covariate/split pairs and
+  // determine the best split out of these:
+  /////////////////
+  
     size_t varIDtemp; 
     double valuetemp;
     
-    // Count samples until split_value reached
     for (size_t i = 0; i < sampled_varIDs_values.size(); ++i) {
-      
+
+		// Get current covariate ID and split:
       varIDtemp = std::get<0>(sampled_varIDs_values[i]);
       valuetemp = std::get<1>(sampled_varIDs_values[i]);
       
@@ -245,6 +252,7 @@ bool TreeSurvival::findBestSplitUnivariate(size_t nodeID, std::vector<std::pair<
       logrank = fabs(numerator / sqrt(denominator_squared));
     }
 
+	    // If better than before, use this
     if (logrank > best_logrank) {
       best_value = valuetemp;
       best_varID = varIDtemp;
