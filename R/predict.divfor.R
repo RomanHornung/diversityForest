@@ -29,8 +29,8 @@
 ##' of the code that are not presented in the help pages of 'diversityForest' are found
 ##' in the help pages of 'ranger' (version 0.11.0). The code in the example sections of \code{\link{divfor}} and \code{\link{tunedivfor}} can be
 ##' used as a template for all common application scenarios with respect to classification,
-##' regression and survival prediction using univariate, binary splitting. Some function 
-##' arguments adopted from the 'ranger' package are not be useable with diversity forests
+##' regression and survival prediction using univariable, binary splitting. Some function 
+##' arguments adopted from the 'ranger' package may not be useable with diversity forests
 ##' (for the current package version).
 ##'
 ##' @title Diversity Forest prediction
@@ -58,9 +58,10 @@
 ##'   }
 ##' @references
 ##' \itemize{
+##'   \item Hornung R. (2020) Diversity Forests: Using split sampling to allow for complex split procedures in random forest. Technical Report No. 234, Department of Statistics, University of Munich. \url{https://epub.ub.uni-muenchen.de/73377/index.html}.
 ##'   \item Wright, M. N. & Ziegler, A. (2017). "ranger: A fast Implementation of Random Forests for High Dimensional Data in C++ and R". J Stat Softw 77:1-17, <\doi{10.18637/jss.v077.i01}>.
-##'   \item Wager, S., Hastie T., & Efron, B. (2014). "Confidence Intervals for Random Forests: The Jackknife and the Infinitesimal Jackknife". J Mach Learn Res 15:1625-1651. \url{http://jmlr.org/papers/v15/wager14a.html}.
-##'   \item Meinshausen (2006). "Quantile Regression Forests". J Mach Learn Res 7:983-999. \url{http://www.jmlr.org/papers/v7/meinshausen06a.html}.
+##'   \item Wager, S., Hastie T., & Efron, B. (2014). "Confidence Intervals for Random Forests: The Jackknife and the Infinitesimal Jackknife". J Mach Learn Res 15:1625-1651.
+##'   \item Meinshausen (2006). "Quantile Regression Forests". J Mach Learn Res 7:983-999.
 ##'   }
 ##' @seealso \code{\link{divfor}}
 ##' @author Marvin N. Wright
@@ -358,8 +359,9 @@ predict.divfor.forest <- function(object, data, predict.all = FALSE,
   max.depth <- 0
   inbag <- list(c(0,0))
   use.inbag <- FALSE
-  max.triedsplits <- 0 ## asdf
+  nsplits <- 0 ## asdf
   proptry <- 0 ## asdf
+  eim.mode <- 0
   
   ## Use sparse matrix
   if ("dgCMatrix" %in% class(data.final)) {
@@ -381,7 +383,7 @@ predict.divfor.forest <- function(object, data, predict.all = FALSE,
                       case.weights, use.case.weights, class.weights, 
                       predict.all, keep.inbag, sample.fraction, alpha, minprop, holdout, 
                       prediction.type, num.random.splits, sparse.data, use.sparse.data,
-                      order.snps, oob.error, max.depth, inbag, use.inbag, max.triedsplits, proptry) ## asdf
+                      order.snps, oob.error, max.depth, inbag, use.inbag, nsplits, npairs=0, proptry, divfortype=1, promispairs=list(0,0), eim_mode=0) ## asdf
 
   if (length(result) == 0) {
     stop("User interrupt or internal error.")
