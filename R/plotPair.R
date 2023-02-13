@@ -50,7 +50,7 @@
 ##' only one of the two plots. The default is \code{FALSE}, which results in the two plots being returned together in the form of a 
 ##' \code{ggarrange} object.
 ##' @param intobj Optional. Object of class \code{interactionfor}. If this is provided, the ordering of the categories
-##' obtained when constructing the interaction forest will be used for categorical variables. See Hornung & Boulesteix (2021) for details.
+##' obtained when constructing the interaction forest will be used for categorical variables. See Hornung & Boulesteix (2022) for details.
 ##' @return A ggplot2 plot.
 ##' @examples
 ##' \dontrun{
