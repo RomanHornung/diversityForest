@@ -50,7 +50,7 @@ only one of the two plots. The default is \code{FALSE}, which results in the two
 \code{ggarrange} object.}
 
 \item{intobj}{Optional. Object of class \code{interactionfor}. If this is provided, the ordering of the categories
-obtained when constructing the interaction forest will be used for categorical variables. See Hornung & Boulesteix (2021) for details.}
+obtained when constructing the interaction forest will be used for categorical variables. See Hornung & Boulesteix (2022) for details.}
 }
 \value{
 A ggplot2 plot.

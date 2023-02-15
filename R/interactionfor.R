@@ -126,7 +126,7 @@
 ##'   pairs feature. For example, consider a variable pair A and B and say the label reads "A large AND B small".
 ##'   This would mean that if the value of A is large and, at the same time, the value
 ##'   of B is small, the expected value of the outcome variable is (considerably) different from all other cases. For this type of quantitative interaction,
-##'   the effect of B is weak for small values of A and strong for large values of B. See Hornung & Boulesteix (2022) 
+##'   the effect of B is weak for small values of A and strong for large values of A. See Hornung & Boulesteix (2022) 
 ##'   for more information on the types of quantitative interaction effects targeted by interaction forest.}
 ##'   \item{\code{eim.quant}}{Quantitative EIM values. These values are labeled analoguously as those in \code{eim.quant.sorted}.} 
 ##'   \item{\code{prediction.error}}{Overall out-of-bag prediction error. 
