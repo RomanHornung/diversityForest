@@ -25,7 +25,10 @@
 ##' Currently, categorical, metric, and survival outcomes are supported. Interaction forests feature the effect importance measure (EIM),
 ##' which can be used to rank the covariate variable pairs with respect to the impact of their interaction effects on prediction.
 ##' This allows to identify relevant interaction effects. Interaction forests focus on well interpretable interaction effects.
-##' See the 'Details' section below for more details.
+##' See the 'Details' section below for more details. In addition, we strongly recommend to consult Section C of 
+##' Supplementary Material 1 of Hornung & Boulesteix (2022), which uses detailed examples of interaction forest analyses
+##' with code to illustrate how interaction forests can be used in 
+##' applications: \href{https://ars.els-cdn.com/content/image/1-s2.0-S0167947322000408-mmc1.pdf}{Link}.
 ##'
 ##' The effect importance measure (EIM) of interaction forests distinguishes quantitative and qualitative interaction effects (Peto, 1982).
 ##' This is a common distinction as these two types of interaction effects are interpreted in different ways (see below). 
