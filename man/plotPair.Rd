@@ -19,7 +19,10 @@ plotPair(
 )
 }
 \arguments{
-\item{pair}{Character string vector of length two, where the first character string gives the name of the first member of the respective pair to plot and the second character string gives the name of the second member.}
+\item{pair}{Character string vector of length two, where the first character string gives the name of the first member of the respective pair to plot and the second character string gives the name of the second member.
+Note that the order of the two pair members in \code{pair} determines how the results are 
+visualised: The estimated influence of the second pair member is visualised conditionally
+on different values of the first pair member.}
 
 \item{yvarname}{Name of outcome variable.}
 

@@ -29,6 +29,9 @@
 ##' 
 ##' @title Plot of the (estimated) simultaneous influence of two variables
 ##' @param pair Character string vector of length two, where the first character string gives the name of the first member of the respective pair to plot and the second character string gives the name of the second member.
+##' Note that the order of the two pair members in \code{pair} determines how the results are 
+##' visualised: The estimated influence of the second pair member is visualised conditionally
+##' on different values of the first pair member.
 ##' @param yvarname Name of outcome variable.
 ##' @param statusvarname Name of status variable, only applicable to survival data.
 ##' @param data Data frame containing the variables.
