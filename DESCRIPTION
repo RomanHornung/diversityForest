@@ -1,8 +1,8 @@
 Package: diversityForest
 Type: Package
 Title: Innovative Complex Split Procedures in Random Forests Through Candidate Split Sampling
-Version: 0.3.5
-Date: 2023-02-13
+Version: 0.4.0
+Date: 2023-03-07
 Author: Roman Hornung [aut, cre], Marvin N. Wright [ctb, cph]
 Maintainer: Roman Hornung <hornung@ibe.med.uni-muenchen.de>
 Description: Implements interaction forests [1], which are specific diversity forests and 
@@ -24,7 +24,7 @@ Description: Implements interaction forests [1], which are specific diversity fo
   [2] Hornung, R. (2022) Diversity forests: Using split sampling to enable 
       innovative complex split procedures in random forests.
 	  SN Computer Science 3(2):1, <doi:10.1007/s42979-021-00920-1>.
-SystemRequirements: C++11
+SystemRequirements: C++17
 Encoding: UTF-8
 License: GPL-3
 Imports: Rcpp (>= 0.11.2), Matrix, ggplot2, ggpubr, scales, nnet, sgeostat, rms, MapGAM, gam, rlang, grDevices, RColorBrewer, RcppEigen, survival
@@ -32,6 +32,6 @@ LinkingTo: Rcpp, RcppEigen
 Depends: R (>= 3.5)
 Suggests: testthat, BOLTSSIRR
 Additional_repositories: https://romanhornung.github.io/drat
-RoxygenNote: 7.2.2
+RoxygenNote: 7.2.3
 NeedsCompilation: yes
 Packaged: 2022-01-05 11:05:00 UTC; hornung

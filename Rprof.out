@@ -1,0 +1,13 @@
+sample.interval=20000
+"file.exists" "aprof" 
+"is" ".rs.valueDescriptionImpl" "doTryCatch" "tryCatchOne" "tryCatchList" "tryCatch" ".rs.valueDescription" "<Anonymous>" 
+"eval" "FUN" "lapply" "strSub" "str.default" "str" "doTryCatch" "tryCatchOne" "tryCatchList" "tryCatch" "try" "...elt" "withVisible" "capture.output" "doTryCatch" "tryCatchOne" "tryCatchList" "tryCatch" ".rs.withTimeLimit" ".rs.valueFromStr" ".rs.valueContentsImpl" "doTryCatch" "tryCatchOne" "tryCatchList" "tryCatch" ".rs.valueContents" "<Anonymous>" 
+"lazyLoadDBfetch" "readLineDensity" "print.aprof" "<Anonymous>" 
+"file" "readLines" "plot.aprof" "plot" 
+".Call" "RStudioGD" ".External.graphics" "graphics::layout" "plot.aprof" "plot" 
+".Call" "RStudioGD" ".External.graphics" "graphics::layout" "plot.aprof" "plot" 
+".External2" "plot.new" "plot.default" "graphics::plot" "plot.aprof" "plot" 
+"max" "plot.aprof" "plot" 
+".Call" "doTryCatch" "tryCatchOne" "tryCatchList" "tryCatch" "<Anonymous>" 
+".Call" "doTryCatch" "tryCatchOne" "tryCatchList" "tryCatch" "<Anonymous>" 
+".Call" "doTryCatch" "tryCatchOne" "tryCatchList" "tryCatch" "<Anonymous>" 
